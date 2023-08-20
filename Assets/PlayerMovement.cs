@@ -6,6 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speedFall;
     public float speedMove;
+    public float speedDash = 100.0f;
+    public float jumpTime = 1.0f;
+    bool jumping = false;
     Vector3 direction;
     public GameObject cubo;
 
@@ -48,6 +51,23 @@ public class PlayerMovement : MonoBehaviour
         {
             direction = new Vector3(0.0f, 0.0f, -1.0f).normalized;
             cubo.transform.Translate(direction * speedMove * Time.deltaTime);
+        }
+
+        if (Input.GetKeyDown("space") && !jumping)
+        {
+            jumping = true;
+            speedFall = 1;
+        }
+
+        if (jumping)
+        {
+            jumpTime -= Time.deltaTime;
+            if(jumpTime <= 0.0f)
+            {
+                jumpTime = 1.0f;
+                jumping = false;
+                speedFall = 5;
+            }
         }
 
 
