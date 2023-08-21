@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         // Mando
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        direction = new Vector3(horizontal, 0.0f, vertical).normalized;
+        direction = new Vector3(vertical, 0.0f, horizontal).normalized;
         cubo.transform.Translate(direction * speedMove * Time.deltaTime);
 
         // Teclado
@@ -61,13 +61,17 @@ public class PlayerMovement : MonoBehaviour
             jumping = true;
             speedFall = slowTimeSpeed;
         }
+        if (Input.GetKeyUp("space") && jumping)
+        {
+            jumping = false;
+            speedFall = auxSF;
+        }
 
         if (jumping)
         {
             slowTime -= Time.deltaTime;
             if(slowTime <= 0.0f)
             {
-                slowTime = 1.0f;
                 jumping = false;
                 speedFall = auxSF;
             }
