@@ -14,7 +14,7 @@ public class CollisionDetection : MonoBehaviour
     {
         if(collision.gameObject.tag == "Obstacle")
         {
-            //gameManager.RestartLevel();
+            gameManager.RestartLevel();
         }
     }
 }
