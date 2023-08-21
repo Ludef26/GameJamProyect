@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -583,6 +587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0
       objectReference: {fileID: 0}
+    - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -695,6 +703,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -1016,6 +1028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_2_LOD2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalScale.x
       value: 54.294415
@@ -1181,6 +1197,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -1259,6 +1279,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_2_LOD2
       objectReference: {fileID: 0}
+    - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalScale.x
       value: 19.431112
@@ -1335,6 +1359,10 @@ PrefabInstance:
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5752876438290704574, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_LocalScale.x
@@ -1485,6 +1513,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -1782,12 +1814,39 @@ MeshCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+--- !u!54 &315983382
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315983377}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 14
+  m_CollisionDetection: 2
 --- !u!1001 &316020691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1799,6 +1858,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -1877,6 +1940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7220414201445321586, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_LocalScale.x
       value: 163.03094
@@ -1945,6 +2012,10 @@ PrefabInstance:
     - target: {fileID: 1989590672885270120, guid: b20616675454eff4d96f08f2e954af14, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_5_LOD0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989590672885270120, guid: b20616675454eff4d96f08f2e954af14, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3261456448304436699, guid: b20616675454eff4d96f08f2e954af14, type: 3}
       propertyPath: m_Convex
@@ -2275,6 +2346,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -2871,6 +2946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_2_LOD2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalScale.x
       value: 19.431112
@@ -3069,6 +3148,10 @@ PrefabInstance:
     - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Convex
@@ -3441,6 +3524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5752876438290704574, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_LocalScale.x
       value: 53.81541
@@ -3509,6 +3596,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -3709,6 +3800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -3781,6 +3876,10 @@ PrefabInstance:
     - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_2_LOD2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalScale.x
@@ -3939,6 +4038,10 @@ PrefabInstance:
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7220414201445321586, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_LocalScale.x
@@ -4558,7 +4661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4579,6 +4682,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       insertIndex: -1
       addedObject: {fileID: 315983381}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 315983382}
   m_SourcePrefab: {fileID: 100100000, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
 --- !u!1001 &933536330
 PrefabInstance:
@@ -4595,6 +4701,10 @@ PrefabInstance:
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7220414201445321586, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_LocalScale.x
@@ -4664,6 +4774,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -4738,6 +4852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4810,6 +4928,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -4964,6 +5086,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -5280,6 +5406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -5520,6 +5650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -5597,6 +5731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2
       objectReference: {fileID: 0}
+    - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5752876438290704574, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_LocalScale.x
       value: 13.625327
@@ -5669,6 +5807,10 @@ PrefabInstance:
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 7220414201445321586, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_LocalScale.x
@@ -5882,6 +6024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6032,6 +6178,10 @@ PrefabInstance:
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5752876438290704574, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_LocalScale.x
@@ -6581,6 +6731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6902,6 +7056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -7134,7 +7292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8167041273487203049, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
       propertyPath: m_Size.y
-      value: 1347.99
+      value: 937.45
       objectReference: {fileID: 0}
     - target: {fileID: 8167041273487203049, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
       propertyPath: m_Size.z
@@ -7142,9 +7300,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8167041273487203049, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
       propertyPath: m_Center.y
-      value: 339
+      value: 381.4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9160091347264212052, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -7214,6 +7373,10 @@ PrefabInstance:
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5752876438290704574, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_LocalScale.x
@@ -7605,6 +7768,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -7788,6 +7955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7220414201445321586, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_LocalScale.x
       value: 163.03094
@@ -7941,6 +8112,10 @@ PrefabInstance:
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5752876438290704574, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_LocalScale.x
@@ -8191,6 +8366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0
       objectReference: {fileID: 0}
+    - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7220414201445321586, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_LocalScale.x
       value: 12.96023
@@ -8259,6 +8438,10 @@ PrefabInstance:
     - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_2_LOD2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalScale.x
@@ -8402,6 +8585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -8474,6 +8661,10 @@ PrefabInstance:
     - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_2_LOD2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalScale.x
@@ -8701,6 +8892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -8865,6 +9060,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
@@ -9106,6 +9305,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -9230,6 +9433,10 @@ PrefabInstance:
     - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Convex
@@ -9806,6 +10013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_2_LOD2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2939817635469197426, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalScale.x
       value: 54.294415
@@ -10012,6 +10223,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -10085,6 +10300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -10110,6 +10329,10 @@ PrefabInstance:
     - target: {fileID: 1989590672885270120, guid: b20616675454eff4d96f08f2e954af14, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_5_LOD0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1989590672885270120, guid: b20616675454eff4d96f08f2e954af14, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 3261456448304436699, guid: b20616675454eff4d96f08f2e954af14, type: 3}
       propertyPath: m_Convex
@@ -10258,6 +10481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -10335,6 +10562,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Convex
