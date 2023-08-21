@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     float auxSF;
     public float speedMove;
     public float speedDash = 100.0f;
-    public float jumpTime = 1.0f;
+    public float slowTime = 1.0f;
+    public float slowTimeSpeed;
     bool jumping = false;
     Vector3 direction;
     public GameObject cubo;
@@ -57,15 +58,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown("space") && !jumping)
         {
             jumping = true;
-            speedFall = 1;
+            speedFall = slowTimeSpeed;
         }
 
         if (jumping)
         {
-            jumpTime -= Time.deltaTime;
-            if(jumpTime <= 0.0f)
+            slowTime -= Time.deltaTime;
+            if(slowTime <= 0.0f)
             {
-                jumpTime = 1.0f;
+                slowTime = 1.0f;
                 jumping = false;
                 speedFall = auxSF;
             }
