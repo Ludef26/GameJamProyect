@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speedFall;
+    float auxSF;
     public float speedMove;
     public float speedDash = 100.0f;
     public float jumpTime = 1.0f;
@@ -15,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        auxSF = speedFall;
     }
 
     // Update is called once per frame
@@ -66,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 jumpTime = 1.0f;
                 jumping = false;
-                speedFall = 5;
+                speedFall = auxSF;
             }
         }
 
