@@ -24,10 +24,13 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Mando
-        /*float horizontal = Input.GetAxisRaw("Horizontal");
+        float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        */
 
+        if (horizontal > 0)
+        {
+            Debug.Log(horizontal);
+        }
         // Teclado
         bool left = Input.GetKey("left");
         bool right = Input.GetKey("down");
