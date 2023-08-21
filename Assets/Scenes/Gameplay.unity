@@ -1107,6 +1107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedFall: 5
   speedMove: 5
+  speedDash: 100
+  jumpTime: 1
   cubo: {fileID: 1535160137}
 --- !u!1 &1550924728
 GameObject:
