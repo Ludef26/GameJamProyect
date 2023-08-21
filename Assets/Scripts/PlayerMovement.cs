@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         // Mando
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        direction = new Vector3(vertical, 0.0f, horizontal).normalized;
+        direction = new Vector3(horizontal, 0.0f, vertical).normalized;
         cubo.transform.Translate(direction * speedMove * Time.deltaTime);
 
         // Teclado
