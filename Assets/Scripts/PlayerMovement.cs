@@ -26,11 +26,9 @@ public class PlayerMovement : MonoBehaviour
         // Mando
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+        direction = new Vector3(vertical, 0.0f, horizontal).normalized;
+        cubo.transform.Translate(direction * speedMove * Time.deltaTime);
 
-        if (horizontal > 0)
-        {
-            Debug.Log(horizontal);
-        }
         // Teclado
         bool left = Input.GetKey("left");
         bool right = Input.GetKey("down");
