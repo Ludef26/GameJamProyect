@@ -15,6 +15,6 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, target.transform.position.y + offset, transform.position.z);
+        transform.position = new Vector3(target.transform.position.x, target.transform.position.y + offset, target.transform.position.z);
     }
 }
