@@ -70,11 +70,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-
-    }
-
-    void FixedUpdate()
-    {
         cubo.transform.Translate(new Vector3(0.0f, -1.0f * speedFall * Time.deltaTime, 0.0f));
+
     }
 }
