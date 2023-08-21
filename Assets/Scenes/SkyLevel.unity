@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.60812324, g: 0.9181267, b: 0.9750342, a: 1}
+  m_IndirectSpecularColor: {r: 0.608124, g: 0.91812766, b: 0.9750355, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -194,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 6600854998133585339, guid: db5426d790161a24b9844b0ba3fda7a4, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070509825529422515, guid: db5426d790161a24b9844b0ba3fda7a4, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -425,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -438,6 +446,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (8)
@@ -571,6 +583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0
       objectReference: {fileID: 0}
+    - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -679,6 +695,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -837,6 +857,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (7)
@@ -1044,6 +1068,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -44.105
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1152,6 +1180,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -1279,6 +1311,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1292,6 +1328,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3821076645926888369, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (5)
@@ -1361,6 +1401,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 218726269}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (17)
@@ -1442,6 +1486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 13.068402
@@ -1456,7 +1504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -533.75
+      value: -527.9
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1507,6 +1555,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3604015454340286163, guid: 7314b9d34785e5940a8ef2a45ac3503a, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4410883803184568277, guid: 7314b9d34785e5940a8ef2a45ac3503a, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_2_LOD0
@@ -1709,6 +1761,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b622002f47552264f8b54cce3433c10b, type: 3}
   m_PrefabInstance: {fileID: 301892766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &315983377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+  m_PrefabInstance: {fileID: 905922265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &315983381
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315983377}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 1
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6150326042995890324, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
 --- !u!1001 &316020691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1720,6 +1799,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -1786,6 +1869,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (4)
@@ -1858,6 +1945,10 @@ PrefabInstance:
     - target: {fileID: 1989590672885270120, guid: b20616675454eff4d96f08f2e954af14, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_5_LOD0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261456448304436699, guid: b20616675454eff4d96f08f2e954af14, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3940587522465671413, guid: b20616675454eff4d96f08f2e954af14, type: 3}
       propertyPath: m_LocalScale.x
@@ -1932,9 +2023,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 669772443470129760, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 818023012446379727, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1260246762804363997, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370999563837139165, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1409284260337075650, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_LocalScale.x
@@ -1947,6 +2050,10 @@ PrefabInstance:
     - target: {fileID: 1409284260337075650, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_LocalPosition.z
       value: -8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435349044199924443, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3527054728595877004, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
@@ -1968,9 +2075,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 6158300604395802223, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6361043183770425742, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7092248106581970769, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_Name
       value: RockObstacle1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296030962141353801, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7840681387939432579, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
@@ -1979,6 +2098,10 @@ PrefabInstance:
     - target: {fileID: 7988826962144689196, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428904052415143998, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8870369739799314627, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_LocalScale.x
@@ -2153,6 +2276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.9586
@@ -2224,11 +2351,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
@@ -2240,15 +2367,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
-      value: 0.20469871
+      value: 0.20469747
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].time
-      value: 0.47503644
+      value: 0.49217206
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].time
-      value: 0.8511931
+      value: 0.7997939
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[4].time
@@ -2256,15 +2383,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
-      value: 0.78313076
+      value: 0.547323
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].value
-      value: 0.99126625
+      value: 0.77292633
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].value
-      value: 0.6808968
+      value: 0.5411588
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[4].value
@@ -2272,7 +2399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].inSlope
-      value: 2.2846727
+      value: 1.3282229
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].inSlope
@@ -2280,7 +2407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].inSlope
-      value: -2.2942219
+      value: -1.8439204
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[4].inSlope
@@ -2288,7 +2415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].outSlope
-      value: 2.2846727
+      value: 1.3282229
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].inWeight
@@ -2304,7 +2431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].outSlope
-      value: -2.2942219
+      value: -1.8439204
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[4].inWeight
@@ -2316,7 +2443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].outWeight
-      value: 0.33333334
+      value: 0.5195874
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].outWeight
@@ -2324,7 +2451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].outWeight
-      value: 0.33333334
+      value: 0.38452342
       objectReference: {fileID: 0}
     - target: {fileID: 109524407768817388, guid: 11f58c00df48e664f96bd51c83900bd4, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[4].outWeight
@@ -2796,6 +2923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2938,6 +3069,10 @@ PrefabInstance:
     - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3157,9 +3292,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 669772443470129760, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 818023012446379727, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1260246762804363997, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370999563837139165, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1409284260337075650, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_LocalScale.x
@@ -3173,6 +3320,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -8.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1435349044199924443, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3527054728595877004, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
       value: Obstacle
@@ -3185,9 +3336,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 6158300604395802223, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6361043183770425742, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7092248106581970769, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_Name
       value: RockObstacle1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296030962141353801, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7840681387939432579, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
@@ -3196,6 +3359,10 @@ PrefabInstance:
     - target: {fileID: 7988826962144689196, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428904052415143998, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8870369739799314627, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_LocalScale.x
@@ -3266,6 +3433,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3821076645926888369, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (2)
@@ -3338,6 +3509,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -3534,6 +3709,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.9586
@@ -3655,6 +3834,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.079
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3668,6 +3851,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 218726269}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (15)
@@ -3745,6 +3932,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (1)
@@ -4142,6 +4333,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4288,6 +4483,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8042039561892101283, guid: d0f44517beb7c2847afffad3da3d9f7b, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4359,7 +4558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4376,7 +4575,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 315983381}
   m_SourcePrefab: {fileID: 100100000, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
 --- !u!1001 &933536330
 PrefabInstance:
@@ -4386,6 +4588,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (5)
@@ -4459,6 +4665,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.9586
@@ -4528,6 +4738,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 8.672106
@@ -4596,6 +4810,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -4726,6 +4944,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4742,6 +4964,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -5054,6 +5280,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.9586
@@ -5290,6 +5520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.9586
@@ -5355,6 +5589,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3821076645926888369, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2
@@ -5424,6 +5662,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (2)
@@ -5640,6 +5882,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 12.740626
@@ -5779,6 +6025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3821076645926888369, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (3)
@@ -5910,6 +6160,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6156,6 +6410,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6231,6 +6489,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -6319,6 +6581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 25.102789
@@ -6384,6 +6650,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (6)
@@ -6530,6 +6800,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6607,6 +6881,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8042039561892101283, guid: d0f44517beb7c2847afffad3da3d9f7b, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6623,6 +6901,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -6753,6 +7035,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8042039561892101283, guid: d0f44517beb7c2847afffad3da3d9f7b, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6767,12 +7053,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5207111639996178872, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+      propertyPath: slowTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207111639996178872, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
       propertyPath: speedFall
       value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 5207111639996178872, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
       propertyPath: speedMove
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5207111639996178872, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+      propertyPath: slowTimeSpeed
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 5364123093022068417, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
       propertyPath: m_Mesh
@@ -6834,11 +7128,77 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8167041273487203049, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+      propertyPath: m_Size.x
+      value: 309.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167041273487203049, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+      propertyPath: m_Size.y
+      value: 1347.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167041273487203049, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+      propertyPath: m_Size.z
+      value: 292.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8167041273487203049, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+      propertyPath: m_Center.y
+      value: 339
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6633007521189960245, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1402612541}
+    - targetCorrespondingSourceObject: {fileID: 6633007521189960245, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1402612547}
   m_SourcePrefab: {fileID: 100100000, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+--- !u!1 &1402612540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6633007521189960245, guid: de8d255fee578914e94145fe1e52e80b, type: 3}
+  m_PrefabInstance: {fileID: 1402612539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1402612541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402612540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8170f581353da7469f93e57d08ae441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1402612547
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402612540}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1001 &1402984556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6847,6 +7207,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3821076645926888369, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (1)
@@ -7133,6 +7497,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a01382f4fef9dda44bfc417604e578b8, type: 3}
+--- !u!1 &1430605932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1430605934}
+  - component: {fileID: 1430605933}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1430605933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430605932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44245c9de15f2904b9f25c95b3bfc877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1430605934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430605932}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -523.6041, y: 2716.6921, z: -17.173586}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1437733032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7196,6 +7604,10 @@ PrefabInstance:
     - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7368,6 +7780,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (3)
@@ -7437,6 +7853,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (9)
@@ -7514,6 +7934,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3821076645926888369, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5278422567572589857, guid: c22a4bb9c0e33d244a9e6c3ed599b376, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD2 (4)
@@ -7634,7 +8058,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 3
-  far clip plane: 1000
+  far clip plane: 200
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -7759,6 +8183,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0
@@ -7846,7 +8274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -502.38303
+      value: -499.6
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7883,6 +8311,10 @@ PrefabInstance:
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -44.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7969,6 +8401,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -8090,6 +8526,10 @@ PrefabInstance:
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.079
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8261,6 +8701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.9586
@@ -8422,6 +8866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.9586
@@ -8487,6 +8935,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 348226389093953021, guid: 2c20c83edb8a01047a8955500376e4ad, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1417932123440534810, guid: 2c20c83edb8a01047a8955500376e4ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 9.58
@@ -8628,6 +9080,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6413842335096204691, guid: 20f839ac523f2154e8889236905b3f7a, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8649,6 +9105,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -8771,6 +9231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8784,6 +9248,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 218726269}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (16)
@@ -8923,6 +9391,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9069,6 +9541,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8227963848436142774, guid: 9fc931866da335e4b890d84582588f81, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9245,6 +9721,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 218726269}
     m_Modifications:
+    - target: {fileID: 4550395741252099896, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6530906115176955355, guid: 4944276ff6bc3a44e8a8da53180655a5, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_4_LOD0 (19)
@@ -9378,6 +9858,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -44.105
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9455,6 +9939,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8261736698728185769, guid: 9fc931866da335e4b890d84582588f81, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9523,6 +10011,10 @@ PrefabInstance:
     - target: {fileID: 4070161772080499734, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9593,6 +10085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_3_LOD0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6598176796823997255, guid: abf2a0eb6df7a144b8ac342669952bd8, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9614,6 +10110,10 @@ PrefabInstance:
     - target: {fileID: 1989590672885270120, guid: b20616675454eff4d96f08f2e954af14, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_5_LOD0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261456448304436699, guid: b20616675454eff4d96f08f2e954af14, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3940587522465671413, guid: b20616675454eff4d96f08f2e954af14, type: 3}
       propertyPath: m_LocalScale.x
@@ -9758,6 +10258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
       value: 8.672106
@@ -9831,6 +10335,10 @@ PrefabInstance:
     - target: {fileID: 2086920094576190308, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_Name
       value: StylRocksMagic_1_LOD2 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6054976864246822823, guid: f44ce0e119308e845951af39be68af45, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8223592395372124478, guid: f44ce0e119308e845951af39be68af45, type: 3}
       propertyPath: m_LocalScale.x
@@ -10155,9 +10663,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 669772443470129760, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 818023012446379727, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1260246762804363997, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370999563837139165, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435349044199924443, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3527054728595877004, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
@@ -10171,9 +10695,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 6158300604395802223, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6361043183770425742, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7092248106581970769, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_Name
       value: RockObstacle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7296030962141353801, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7840681387939432579, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
@@ -10182,6 +10718,10 @@ PrefabInstance:
     - target: {fileID: 7988826962144689196, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_TagString
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428904052415143998, guid: a3913244dd493194caa4952d24e17214, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8870369739799314627, guid: a3913244dd493194caa4952d24e17214, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10329,3 +10869,4 @@ SceneRoots:
   - {fileID: 110365558}
   - {fileID: 887059429}
   - {fileID: 1394345389}
+  - {fileID: 1430605934}
