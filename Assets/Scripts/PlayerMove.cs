@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float defaultSpeedMove, defaultSpeedFall, speedGlide, slowGlide;
+    public float defaultSpeedMove, defaultSpeedFall, speedGlide, slowGlide, glideTimer;
     private float currentSpeedMove, currentSpeedFall;
     public GameObject player;
     private Rigidbody rb;
@@ -32,11 +32,12 @@ public class PlayerMove : MonoBehaviour
         //Debug.Log(inputVector);
         inputVector = inputVector.normalized;
 
-        if (glide > 0.1f)
+        if (glide > 0.1f && glideTimer > 0)
         {
             Debug.Log(glide);
             currentSpeedMove = speedGlide;
             currentSpeedFall = slowGlide;
+            glideTimer -= Time.deltaTime;
         }
         else
         {

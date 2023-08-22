@@ -3259,6 +3259,7 @@ MonoBehaviour:
   defaultSpeedFall: 70
   speedGlide: 15
   slowGlide: 40
+  glideTimer: 3
   player: {fileID: 554776043}
 --- !u!4 &554776045
 Transform:
