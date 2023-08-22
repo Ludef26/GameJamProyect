@@ -35,11 +35,20 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Glide"",
+                    ""type"": ""Value"",
+                    ""id"": ""a3fc3b85-e549-4eb0-8237-c3490351ebee"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
                 {
-                    ""name"": ""2D Vector"",
+                    ""name"": ""WASD"",
                     ""id"": ""7655fe3e-5484-4a7d-80b4-68c9d9ff3fff"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -92,6 +101,94 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""MoveAxis"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bd718e1e-80da-4c5f-ab4b-2783fdd3c744"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Arrows"",
+                    ""id"": ""3de3cdfc-000a-4d3a-b663-2b6a1a7f2acf"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveAxis"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""9c5c367d-5371-4675-b1ea-d43211de4195"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""96699e28-281a-4f9f-b086-af82e1c0b41f"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""48d569c3-1b4b-42cf-a19d-7652b2aa2f26"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""057b8dd8-a8af-4c64-92a1-145d74029cca"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MoveAxis"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6da2e13a-6e07-4f42-b7de-02dfa4c6237d"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Glide"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""59568002-50e5-4aff-a56e-cfb910376aa4"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Glide"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -101,6 +198,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         // PlayerMove
         m_PlayerMove = asset.FindActionMap("PlayerMove", throwIfNotFound: true);
         m_PlayerMove_MoveAxis = m_PlayerMove.FindAction("MoveAxis", throwIfNotFound: true);
+        m_PlayerMove_Glide = m_PlayerMove.FindAction("Glide", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -163,11 +261,13 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_PlayerMove;
     private List<IPlayerMoveActions> m_PlayerMoveActionsCallbackInterfaces = new List<IPlayerMoveActions>();
     private readonly InputAction m_PlayerMove_MoveAxis;
+    private readonly InputAction m_PlayerMove_Glide;
     public struct PlayerMoveActions
     {
         private @Inputs m_Wrapper;
         public PlayerMoveActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @MoveAxis => m_Wrapper.m_PlayerMove_MoveAxis;
+        public InputAction @Glide => m_Wrapper.m_PlayerMove_Glide;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMove; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -180,6 +280,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @MoveAxis.started += instance.OnMoveAxis;
             @MoveAxis.performed += instance.OnMoveAxis;
             @MoveAxis.canceled += instance.OnMoveAxis;
+            @Glide.started += instance.OnGlide;
+            @Glide.performed += instance.OnGlide;
+            @Glide.canceled += instance.OnGlide;
         }
 
         private void UnregisterCallbacks(IPlayerMoveActions instance)
@@ -187,6 +290,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @MoveAxis.started -= instance.OnMoveAxis;
             @MoveAxis.performed -= instance.OnMoveAxis;
             @MoveAxis.canceled -= instance.OnMoveAxis;
+            @Glide.started -= instance.OnGlide;
+            @Glide.performed -= instance.OnGlide;
+            @Glide.canceled -= instance.OnGlide;
         }
 
         public void RemoveCallbacks(IPlayerMoveActions instance)
@@ -207,5 +313,6 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     public interface IPlayerMoveActions
     {
         void OnMoveAxis(InputAction.CallbackContext context);
+        void OnGlide(InputAction.CallbackContext context);
     }
 }

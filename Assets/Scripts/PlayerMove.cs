@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float speedMove, speedFall;
+    public float defaultSpeedMove, defaultSpeedFall, speedGlide, slowGlide;
+    private float currentSpeedMove, currentSpeedFall;
     public GameObject player;
     private Rigidbody rb;
     private Inputs playerInput;
+    private Vector2 inputVector;
+    private float glide = 0f;
 
     void Start()
     {
@@ -23,12 +26,27 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 inputVector = playerInput.PlayerMove.MoveAxis.ReadValue<Vector2>();
-        Debug.Log(inputVector);
+        inputVector = playerInput.PlayerMove.MoveAxis.ReadValue<Vector2>();
+        glide = playerInput.PlayerMove.Glide.ReadValue<float>();
+
+        //Debug.Log(inputVector);
         inputVector = inputVector.normalized;
 
-        //Vector3 newPosition = new Vector3(transform.position.x + inputVector.x * speedMove * Time.deltaTime, transform.position.y - speedFall * Time.deltaTime, transform.position.z + inputVector.y * speedMove * Time.deltaTime);
-        //rb.MovePosition(newPosition);
-        rb.velocity = new Vector3 (inputVector.x * speedMove, -speedFall, inputVector.y * speedMove);
+        if (glide > 0.1f)
+        {
+            Debug.Log(glide);
+            currentSpeedMove = speedGlide;
+            currentSpeedFall = slowGlide;
+        }
+        else
+        {
+            currentSpeedMove = defaultSpeedMove;
+            currentSpeedFall = defaultSpeedFall;
+        }
+
+        rb.velocity = transform.up.normalized * currentSpeedFall * -1f + transform.forward.normalized * currentSpeedMove * inputVector.y + transform.right.normalized * currentSpeedMove * inputVector.x;
+        /*Debug.DrawRay(transform.position, transform.up.normalized * speedFall * -1f, Color.green);
+        Debug.DrawRay(transform.position, transform.forward.normalized * speedFall, Color.red);
+        Debug.DrawRay(transform.position, transform.right.normalized * speedFall, Color.blue);*/
     }
 }
