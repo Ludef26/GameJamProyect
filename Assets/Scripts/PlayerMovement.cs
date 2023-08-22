@@ -13,16 +13,22 @@ public class PlayerMovement : MonoBehaviour
     bool jumping = false;
     Vector3 direction;
     public GameObject cubo;
+    private Rigidbody rb;
+    private Inputs playerInput;
 
     // Start is called before the first frame update
     void Start()
     {
         auxSF = speedFall;
+        rb = GetComponent<Rigidbody>();
+        playerInput = new Inputs();
+        playerInput.PlayerMove.Enable();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         // Mando
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -78,6 +84,5 @@ public class PlayerMovement : MonoBehaviour
         }
 
         cubo.transform.Translate(new Vector3(0.0f, -1.0f * speedFall * Time.deltaTime, 0.0f));
-
     }
 }
