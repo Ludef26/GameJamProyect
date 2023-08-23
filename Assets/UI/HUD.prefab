@@ -164,6 +164,7 @@ GameObject:
   - component: {fileID: 6802692047532299273}
   - component: {fileID: 3316662833402065771}
   - component: {fileID: 6017439097436059576}
+  - component: {fileID: 4234888969015890111}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -269,6 +270,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glideIndicator: {fileID: 1993237218253150873}
   dashIndicator: {fileID: 7950204503341020829}
+--- !u!95 &4234888969015890111
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6147673886154612242}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d9529725f1ff27b4a826593172283410, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6232688428947479040
 GameObject:
   m_ObjectHideFlags: 0
