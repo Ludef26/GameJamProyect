@@ -44,6 +44,15 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": ""Press"",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Value"",
+                    ""id"": ""80eda010-1075-4cc5-a86e-27c3ebac492f"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": ""Tap"",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -189,6 +198,17 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""Glide"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a400dd67-f3a6-42c3-a2e9-24e788d6cb67"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -199,6 +219,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         m_PlayerMove = asset.FindActionMap("PlayerMove", throwIfNotFound: true);
         m_PlayerMove_MoveAxis = m_PlayerMove.FindAction("MoveAxis", throwIfNotFound: true);
         m_PlayerMove_Glide = m_PlayerMove.FindAction("Glide", throwIfNotFound: true);
+        m_PlayerMove_Dash = m_PlayerMove.FindAction("Dash", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -262,12 +283,14 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private List<IPlayerMoveActions> m_PlayerMoveActionsCallbackInterfaces = new List<IPlayerMoveActions>();
     private readonly InputAction m_PlayerMove_MoveAxis;
     private readonly InputAction m_PlayerMove_Glide;
+    private readonly InputAction m_PlayerMove_Dash;
     public struct PlayerMoveActions
     {
         private @Inputs m_Wrapper;
         public PlayerMoveActions(@Inputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @MoveAxis => m_Wrapper.m_PlayerMove_MoveAxis;
         public InputAction @Glide => m_Wrapper.m_PlayerMove_Glide;
+        public InputAction @Dash => m_Wrapper.m_PlayerMove_Dash;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMove; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -283,6 +306,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @Glide.started += instance.OnGlide;
             @Glide.performed += instance.OnGlide;
             @Glide.canceled += instance.OnGlide;
+            @Dash.started += instance.OnDash;
+            @Dash.performed += instance.OnDash;
+            @Dash.canceled += instance.OnDash;
         }
 
         private void UnregisterCallbacks(IPlayerMoveActions instance)
@@ -293,6 +319,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @Glide.started -= instance.OnGlide;
             @Glide.performed -= instance.OnGlide;
             @Glide.canceled -= instance.OnGlide;
+            @Dash.started -= instance.OnDash;
+            @Dash.performed -= instance.OnDash;
+            @Dash.canceled -= instance.OnDash;
         }
 
         public void RemoveCallbacks(IPlayerMoveActions instance)
@@ -314,5 +343,6 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     {
         void OnMoveAxis(InputAction.CallbackContext context);
         void OnGlide(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
     }
 }
