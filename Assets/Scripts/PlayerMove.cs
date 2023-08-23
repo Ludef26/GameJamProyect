@@ -19,6 +19,7 @@ public class PlayerMove : MonoBehaviour
     public float dashCooldown;
     private float auxdashCooldown;
     private bool onCooldown;
+    public float dashPower;
 
     private void Awake()
     {
@@ -83,7 +84,7 @@ public class PlayerMove : MonoBehaviour
                 dashTime = auxDashTime;
                 onCooldown = true;
             }
-            rb.velocity = transform.up.normalized * currentSpeedFall * -1f + transform.forward.normalized * 100 * inputVector.y + transform.right.normalized * 100 * inputVector.x;
+            rb.velocity = transform.up.normalized * currentSpeedFall * -1f + transform.forward.normalized * dashPower * inputVector.y + transform.right.normalized * dashPower * inputVector.x;
         }
         else {
             rb.velocity = transform.up.normalized * currentSpeedFall * -1f + transform.forward.normalized * currentSpeedMove * inputVector.y + transform.right.normalized * currentSpeedMove * inputVector.x;
