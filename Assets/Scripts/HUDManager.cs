@@ -20,9 +20,14 @@ public class HUDManager : MonoBehaviour
     {
         glideTimerCircle.fillAmount = timerValue / maxTime;
 
-        if(glideTimerCircle.fillAmount <= 0)
+        if(timerValue <= 0)
         {
             animator.enabled = true;
         }
+    }
+
+    public void PlayShakeAnimation()
+    {
+        animator.Play("GlideIndicatorShake", 0, 0);
     }
 }

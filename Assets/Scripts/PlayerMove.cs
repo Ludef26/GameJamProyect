@@ -47,6 +47,12 @@ public class PlayerMove : MonoBehaviour
             glideTimer -= Time.deltaTime;
             hud.UpdateGlideIndicator(glideTimer, glideMaxTime);
         }
+        else if (glide > 0.1f && glideTimer <= 0)
+        {
+            currentSpeedMove = defaultSpeedMove;
+            currentSpeedFall = defaultSpeedFall;
+            hud.PlayShakeAnimation();
+        }
         else
         {
             currentSpeedMove = defaultSpeedMove;
