@@ -4681,8 +4681,9 @@ MonoBehaviour:
   slowGlide: 40
   glideTimer: 3
   player: {fileID: 554776043}
-  dashTime: 0
-  dashCooldown: 0
+  dashTime: 0.2
+  dashCooldown: 2
+  dashPower: 80
 --- !u!4 &554776045
 Transform:
   m_ObjectHideFlags: 0
@@ -9847,6 +9848,7 @@ MonoBehaviour:
   player: {fileID: 1069808962}
   dashTime: 0.2
   dashCooldown: 2
+  dashPower: 80
 --- !u!4 &1069808967
 Transform:
   m_ObjectHideFlags: 0
