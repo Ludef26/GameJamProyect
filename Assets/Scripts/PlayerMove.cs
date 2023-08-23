@@ -14,12 +14,12 @@ public class PlayerMove : MonoBehaviour
     private float dash = 0f;
     private HUDManager hud;
     public float dashTime;
-    private bool dashing = false;
+    private bool dashing = false, normalDash;
     private float auxDashTime;
     public float dashCooldown;
     private float auxdashCooldown;
     private bool onCooldown;
-    public float dashPower;
+    public float normalDashPower, downDashPower;
 
     private void Awake()
     {
@@ -70,8 +70,16 @@ public class PlayerMove : MonoBehaviour
             currentSpeedFall = defaultSpeedFall;
         }
 
-        if(dash > 0.1f && (inputVector.x != 0f || inputVector.y != 0f) && !dashing && !onCooldown)
+        if(dash > 0.1f && !dashing && !onCooldown)
         {
+            if (inputVector.x != 0f || inputVector.y != 0f)
+            {
+                normalDash = true;
+            }
+            else
+            {
+                normalDash = false;
+            }
             dashing = true;
         }
 
@@ -84,7 +92,14 @@ public class PlayerMove : MonoBehaviour
                 dashTime = auxDashTime;
                 onCooldown = true;
             }
-            rb.velocity = transform.up.normalized * currentSpeedFall * -1f + transform.forward.normalized * dashPower * inputVector.y + transform.right.normalized * dashPower * inputVector.x;
+            if (normalDash)
+            {
+                rb.velocity = transform.up.normalized * currentSpeedFall * -1f + transform.forward.normalized * normalDashPower * inputVector.y + transform.right.normalized * normalDashPower * inputVector.x;
+            }
+            else
+            {
+                rb.velocity = transform.up.normalized * downDashPower * -1f + transform.forward.normalized * currentSpeedMove * inputVector.y + transform.right.normalized * currentSpeedMove * inputVector.x;
+            }
         }
         else {
             rb.velocity = transform.up.normalized * currentSpeedFall * -1f + transform.forward.normalized * currentSpeedMove * inputVector.y + transform.right.normalized * currentSpeedMove * inputVector.x;
