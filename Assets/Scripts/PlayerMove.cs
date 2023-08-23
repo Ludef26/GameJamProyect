@@ -20,6 +20,8 @@ public class PlayerMove : MonoBehaviour
     private float auxdashCooldown;
     private bool onCooldown;
     public float normalDashPower, downDashPower;
+    public float puntuantion = 0;
+    private SavePlayerValues PlayerStats; 
 
     private void Awake()
     {
@@ -33,7 +35,13 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         playerInput = new Inputs();
         playerInput.PlayerMove.Enable();
+<<<<<<< Updated upstream
         auxdashCooldown = 0;
+=======
+        auxdashCooldown = dashCooldown;
+        PlayerStats = GetComponent<SavePlayerValues>();
+        PlayerStats.loadPlayerStats();
+>>>>>>> Stashed changes
     }
 
     public void Update()
@@ -120,5 +128,8 @@ public class PlayerMove : MonoBehaviour
                 hud.PlayBlinkAnimation();
             }
         }
+
+        puntuantion += transform.up.normalized.magnitude;
+        Debug.Log(puntuantion);
     }
 }
