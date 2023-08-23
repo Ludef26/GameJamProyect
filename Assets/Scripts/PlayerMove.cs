@@ -35,13 +35,10 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         playerInput = new Inputs();
         playerInput.PlayerMove.Enable();
-<<<<<<< Updated upstream
         auxdashCooldown = 0;
-=======
         auxdashCooldown = dashCooldown;
         PlayerStats = GetComponent<SavePlayerValues>();
         PlayerStats.loadPlayerStats();
->>>>>>> Stashed changes
     }
 
     public void Update()
