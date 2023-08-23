@@ -2260,6 +2260,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -2567,6 +2571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: blinker
@@ -2574,7 +2582,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1877413719}
   m_SourcePrefab: {fileID: 100100000, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
 --- !u!1001 &225017107
 PrefabInstance:
@@ -3249,6 +3260,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: blinker
@@ -3256,7 +3271,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1057556799}
   m_SourcePrefab: {fileID: 100100000, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
 --- !u!4 &286813828 stripped
 Transform:
@@ -5525,6 +5543,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -6104,6 +6126,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523242836}
   m_Mesh: {fileID: 4300008, guid: 62a1903fd3708d7499742985e02168a7, type: 3}
+--- !u!1 &523749242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+  m_PrefabInstance: {fileID: 221379230}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &526104723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6398,8 +6425,9 @@ MonoBehaviour:
   player: {fileID: 554776043}
   dashTime: 0.2
   dashCooldown: 2
-  normalDashPower: 0
-  downDashPower: 0
+  normalDashPower: 80
+  downDashPower: 140
+  puntuantion: 0
 --- !u!4 &554776045
 Transform:
   m_ObjectHideFlags: 0
@@ -7642,6 +7670,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -8327,6 +8359,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -9113,6 +9149,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: blinker
@@ -9120,8 +9160,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1166937129}
   m_SourcePrefab: {fileID: 100100000, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+--- !u!1 &821897217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+  m_PrefabInstance: {fileID: 285813562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &822441485
 GameObject:
   m_ObjectHideFlags: 0
@@ -11165,6 +11213,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -12829,6 +12881,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
   m_PrefabInstance: {fileID: 285813562}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1057556799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821897217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcbe2d193d69164eae7c8ec66c04c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaserCooldown: 0.8
 --- !u!1001 &1058090418
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12971,6 +13036,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 465c505844950da499dcf096a6da4409, type: 3}
+--- !u!1 &1063205283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+  m_PrefabInstance: {fileID: 812586733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1069808962
 GameObject:
   m_ObjectHideFlags: 0
@@ -13075,6 +13145,7 @@ MonoBehaviour:
   dashCooldown: 2
   normalDashPower: 80
   downDashPower: 140
+  puntuantion: 0
 --- !u!4 &1069808967
 Transform:
   m_ObjectHideFlags: 0
@@ -13152,6 +13223,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: blinker
@@ -13314,6 +13389,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -14325,6 +14408,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
   m_PrefabInstance: {fileID: 812586733}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1166937129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063205283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcbe2d193d69164eae7c8ec66c04c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaserCooldown: 0.8
 --- !u!1001 &1171293978
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16306,6 +16402,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -16375,6 +16475,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -18442,6 +18546,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -20742,6 +20850,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -21050,6 +21162,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -3.75
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 79d9c73b63cc0e942a649c819af50ddb, type: 2}
     - target: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Name
       value: Laser1
@@ -21939,6 +22055,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
   m_PrefabInstance: {fileID: 221379230}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1877413719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523749242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dcbe2d193d69164eae7c8ec66c04c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaserCooldown: 0.8
 --- !u!1001 &1881289046
 PrefabInstance:
   m_ObjectHideFlags: 0
