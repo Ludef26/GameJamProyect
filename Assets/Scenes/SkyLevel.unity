@@ -6480,6 +6480,7 @@ GameObject:
   - component: {fileID: 554776046}
   - component: {fileID: 554776047}
   - component: {fileID: 554776048}
+  - component: {fileID: 554776049}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -6589,6 +6590,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8170f581353da7469f93e57d08ae441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &554776049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554776043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3114ccfad7c5244a43962ee0534ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 554776044}
 --- !u!4 &567062372 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011695518034, guid: 465c505844950da499dcf096a6da4409, type: 3}
@@ -13299,6 +13313,7 @@ GameObject:
   - component: {fileID: 1069808965}
   - component: {fileID: 1069808964}
   - component: {fileID: 1069808963}
+  - component: {fileID: 1069808968}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -13399,15 +13414,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069808962}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.31102863, y: -0.6350285, z: -0.31102863, w: -0.6350285}
-  m_LocalPosition: {x: -321, y: 943.7, z: -12}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 866.2, y: -381.8, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 206552986}
   - {fileID: 2047727109}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 307.81, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1069808968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069808962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae3114ccfad7c5244a43962ee0534ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1069808966}
 --- !u!1001 &1074332302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13643,7 +13671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_DynamicOccludee
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]

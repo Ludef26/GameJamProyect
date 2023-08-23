@@ -126,6 +126,6 @@ public class PlayerMove : MonoBehaviour
         }
 
         puntuantion += transform.up.normalized.magnitude;
-        Debug.Log(puntuantion);
+        //Debug.Log(puntuantion);
     }
 }

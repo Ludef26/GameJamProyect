@@ -18,5 +18,6 @@ public class GameManager : MonoBehaviour
     {
         playerStats.SetPlayerStats();
         SceneManager.LoadScene(currentScene.name);
+        Debug.Log("caca");
     }
 }
