@@ -13,21 +13,27 @@ public class HUDManager : MonoBehaviour
     private void Start()
     {
         glideTimerCircle = glideIndicator.GetComponent<Image>();
+        dashTimerCircle = dashIndicator.GetComponent<Image>();
         animator = GetComponent<Animator>();
     }
 
     public void UpdateGlideIndicator(float timerValue, float maxTime)
     {
         glideTimerCircle.fillAmount = timerValue / maxTime;
+    }
 
-        if(timerValue <= 0)
-        {
-            animator.enabled = true;
-        }
+    public void UpdateDashIndicator(float auxDashCooldown, float dashCooldown)
+    {
+        dashTimerCircle.fillAmount = dashCooldown / auxDashCooldown;
     }
 
     public void PlayShakeAnimation()
     {
         animator.Play("GlideIndicatorShake", 0, 0);
+    }
+
+    public void PlayBlinkAnimation()
+    {
+        animator.Play("DashIndicatorBlink", 0, 0);
     }
 }

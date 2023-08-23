@@ -33,7 +33,7 @@ public class PlayerMove : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         playerInput = new Inputs();
         playerInput.PlayerMove.Enable();
-        auxdashCooldown = dashCooldown;
+        auxdashCooldown = 0;
     }
 
     public void Update()
@@ -57,9 +57,11 @@ public class PlayerMove : MonoBehaviour
             currentSpeedFall = slowGlide;
             glideTimer -= Time.deltaTime;
             hud.UpdateGlideIndicator(glideTimer, glideMaxTime);
+            Debug.Log(glideTimer);
         }
         else if (glide > 0.1f && glideTimer <= 0)
         {
+            Debug.Log("entra2");
             currentSpeedMove = defaultSpeedMove;
             currentSpeedFall = defaultSpeedFall;
             hud.PlayShakeAnimation();
@@ -109,11 +111,13 @@ public class PlayerMove : MonoBehaviour
         Debug.DrawRay(transform.position, transform.right.normalized * speedFall, Color.blue);*/
         if (onCooldown)
         {
-            dashCooldown -= Time.deltaTime;
-            if (dashCooldown < 0.0f)
+            auxdashCooldown += Time.deltaTime;
+            hud.UpdateDashIndicator(dashCooldown, auxdashCooldown);
+            if (auxdashCooldown >= dashCooldown)
             {
-                dashCooldown = auxdashCooldown;
+                auxdashCooldown = 0;
                 onCooldown = false;
+                hud.PlayBlinkAnimation();
             }
         }
     }
