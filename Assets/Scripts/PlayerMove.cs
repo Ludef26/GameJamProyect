@@ -36,7 +36,6 @@ public class PlayerMove : MonoBehaviour
         playerInput = new Inputs();
         playerInput.PlayerMove.Enable();
         auxdashCooldown = 0;
-        auxdashCooldown = dashCooldown;
         PlayerStats = GetComponent<SavePlayerValues>();
         PlayerStats.loadPlayerStats();
     }
