@@ -5,15 +5,22 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float defaultSpeedMove, defaultSpeedFall, speedGlide, slowGlide, glideTimer;
-    private float currentSpeedMove, currentSpeedFall;
+    private float currentSpeedMove, currentSpeedFall, glideMaxTime;
     public GameObject player;
     private Rigidbody rb;
     private Inputs playerInput;
     private Vector2 inputVector;
     private float glide = 0f;
+    private HUDManager hud;
+
+    private void Awake()
+    {
+        glideMaxTime = glideTimer;
+    }
 
     void Start()
     {
+        hud = GameObject.Find("HUD").GetComponent<HUDManager>();
         rb = GetComponent<Rigidbody>();
         playerInput = new Inputs();
         playerInput.PlayerMove.Enable();
@@ -38,6 +45,7 @@ public class PlayerMove : MonoBehaviour
             currentSpeedMove = speedGlide;
             currentSpeedFall = slowGlide;
             glideTimer -= Time.deltaTime;
+            hud.UpdateGlideIndicator(glideTimer, glideMaxTime);
         }
         else
         {
