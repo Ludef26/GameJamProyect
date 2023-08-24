@@ -5,7 +5,7 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
 
-    public float LaserCooldown;
+    public float LaserCooldown = 0.8f;
     private float AuxLaserCooldown;
     private bool Invisible = false;
     private float Alfa = 1f;
