@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.60811526, g: 0.9181409, b: 0.9750177, a: 1}
+  m_IndirectSpecularColor: {r: 0.6081907, g: 0.91815335, b: 0.97504014, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LOW
+  m_text: HIGH
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bbed3104b5568e74d834d697a83f1345, type: 2}
   m_sharedMaterial: {fileID: -2840552628775157738, guid: bbed3104b5568e74d834d697a83f1345, type: 2}
@@ -1263,10 +1263,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1340186720}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1054119694}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: HideOptionsWindow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3522,6 +3522,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9090042f7ccf5c34b9cb889b70619b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionsWindow: {fileID: 1340186720}
+  backButton: {fileID: 585904660}
+  playButton: {fileID: 743472985}
+  eventSystem: {fileID: 0}
 --- !u!4 &1054119695
 Transform:
   m_ObjectHideFlags: 0
@@ -3625,7 +3629,7 @@ MonoBehaviour:
   m_Placeholder: {fileID: 0}
   m_ItemText: {fileID: 1033662941}
   m_ItemImage: {fileID: 0}
-  m_Value: 0
+  m_Value: 2
   m_Options:
     m_Options:
     - m_Text: LOW
@@ -3885,10 +3889,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1340186720}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1054119694}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: DisplayOptionsWindow
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
