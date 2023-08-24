@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.60812324, g: 0.9181267, b: 0.9750342, a: 1}
+  m_IndirectSpecularColor: {r: 0.608038, g: 0.91809064, b: 0.9750387, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5085,6 +5085,33 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6150326042995890324, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
+--- !u!1 &342207340 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+  m_PrefabInstance: {fileID: 345988203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &342207342
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342207340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &342623643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011695518034, guid: 465c505844950da499dcf096a6da4409, type: 3}
@@ -5098,6 +5125,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1388590777655618370, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5396886238539358791, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1585.6
@@ -5138,6 +5169,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5507624785404645858, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
       propertyPath: m_Name
       value: Obstaculo2 (2)
@@ -5146,10 +5181,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8075846191166136880, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867436132672190112, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 342207342}
   m_SourcePrefab: {fileID: 100100000, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
 --- !u!1001 &349265616
 PrefabInstance:
@@ -6390,6 +6436,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1388590777655618370, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5396886238539358791, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1649.6311
@@ -6430,6 +6480,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5507624785404645858, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
       propertyPath: m_Name
       value: Obstaculo2 (1)
@@ -6438,10 +6492,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8075846191166136880, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867436132672190112, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1121915409}
   m_SourcePrefab: {fileID: 100100000, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
 --- !u!4 &425376296 stripped
 Transform:
@@ -8994,6 +9059,7 @@ MonoBehaviour:
   normalDashPower: 80
   downDashPower: 140
   puntuantion: 0
+  lifes: 1
 --- !u!4 &554776045
 Transform:
   m_ObjectHideFlags: 0
@@ -9003,7 +9069,7 @@ Transform:
   m_GameObject: {fileID: 554776043}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1624.1, y: 4781.9, z: -12}
+  m_LocalPosition: {x: -1615, y: 2588, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9801,7 +9867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17060,6 +17126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetXRotation: -48.5
+  rotationMultiplier: 50
 --- !u!1 &1031942849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
@@ -17808,6 +17875,7 @@ MonoBehaviour:
   normalDashPower: 80
   downDashPower: 140
   puntuantion: 0
+  lifes: 1
 --- !u!4 &1069808967
 Transform:
   m_ObjectHideFlags: 0
@@ -18510,6 +18578,33 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011695518034, guid: 465c505844950da499dcf096a6da4409, type: 3}
   m_PrefabInstance: {fileID: 1829482027}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1121915407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+  m_PrefabInstance: {fileID: 425059906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1121915409
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121915407}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &1132782223 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1605112317, guid: 7f29d7b2a9defc84392ee3f65ac49455, type: 3}
@@ -18812,7 +18907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -22400,7 +22495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -33668,6 +33763,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f44ce0e119308e845951af39be68af45, type: 3}
+--- !u!1 &2081232740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+  m_PrefabInstance: {fileID: 7543224052295906072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &2081232742
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081232740}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1001 &2081625789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35076,6 +35198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1388590777655618370, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 5396886238539358791, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1635.2
@@ -35116,6 +35242,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5507624785404645858, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     - target: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
       propertyPath: m_Name
       value: Obstaculo2
@@ -35124,10 +35254,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 8075846191166136880, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867436132672190112, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7505663294175634189, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2081232742}
   m_SourcePrefab: {fileID: 100100000, guid: 8075188f2320e5648a1d7c12a784dcda, type: 3}
 --- !u!1001 &8621151580824103007
 PrefabInstance:

@@ -6,6 +6,7 @@ public class PhaseRotation : MonoBehaviour
 {
     private GameObject player;
     public float targetXRotation = -52.19f;
+    public float rotationMultiplier;
 
     private void Start()
     {
@@ -25,7 +26,7 @@ public class PhaseRotation : MonoBehaviour
         while(player.transform.eulerAngles.x > 360 + targetXRotation || player.transform.eulerAngles.x == 0)
         {
             Debug.Log(player.transform.eulerAngles.x);
-            player.transform.Rotate(-0.1f, 0, 0);
+            player.transform.Rotate(-rotationMultiplier * Time.deltaTime, 0, 0);
             yield return new WaitForSeconds(0.002f);
         }
     }
