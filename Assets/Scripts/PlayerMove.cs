@@ -21,7 +21,8 @@ public class PlayerMove : MonoBehaviour
     private bool onCooldown;
     public float normalDashPower, downDashPower;
     public float puntuantion = 0;
-    private SavePlayerValues PlayerStats; 
+    private SavePlayerValues PlayerStats;
+    public int lifes = 1;
 
     private void Awake()
     {
