@@ -27,5 +27,14 @@ public class CollisionDetection : MonoBehaviour
                 collision.gameObject.SetActive(false);
             }
         }
+        if(collision.gameObject.tag == "Molino")
+        {
+            lifes--;
+            collision.collider.enabled = false;
+            if (lifes < 0)
+            {
+                gameManager.RestartLevel();
+            }
+        }
     }
 }
