@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6079979, g: 0.918071, b: 0.97499555, a: 1}
+  m_IndirectSpecularColor: {r: 0.6082391, g: 0.91820776, b: 0.97505826, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -467,6 +467,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 134580193575813494, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 177947271440012051, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+      propertyPath: m_Name
+      value: BackButtonControl
+      objectReference: {fileID: 0}
     - target: {fileID: 409114334851498617, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -483,6 +491,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1054119694}
+    - target: {fileID: 5558616971634758334, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HideControlsWindow
+      objectReference: {fileID: 0}
     - target: {fileID: 5727922894424879357, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -491,6 +503,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1054119694}
+    - target: {fileID: 6220713960842636037, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6558334888061399647, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
