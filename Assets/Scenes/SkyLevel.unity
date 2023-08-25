@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6081178, g: 0.9180981, b: 0.97503966, a: 1}
+  m_IndirectSpecularColor: {r: 0.60814905, g: 0.91816294, b: 0.97505075, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9537,6 +9537,7 @@ MonoBehaviour:
   lifes: 1
   dashFx: {fileID: 8300000, guid: d9a4ecb0e99118542b0ab4c981d0c514, type: 3}
   model: {fileID: 1570249474}
+  currentCooldownUpgrades: 0
 --- !u!4 &554776045
 Transform:
   m_ObjectHideFlags: 0
@@ -9631,6 +9632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 554776044}
+  upgrades: {fileID: 0}
 --- !u!82 &554776050
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9739,6 +9741,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f68725e1ff7f354997cbf2adf049cd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dashCooldownReduction: 0.2
+  maxDashCooldownUpgrade: 5
+  currentCooldownUpgrades: 0
+  dashCooldownCost: 1000
 --- !u!1001 &566756342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16665,13 +16671,28 @@ PrefabInstance:
     - {fileID: 7264448225519305796, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3819513175410312668, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 913562514}
   m_SourcePrefab: {fileID: 100100000, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
 --- !u!1 &913562508 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3819513175410312668, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
   m_PrefabInstance: {fileID: 913562507}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &913562514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913562508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b1a5f179ce5344d8d248fdfa417229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &914349657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20291,6 +20312,7 @@ MonoBehaviour:
   lifes: 1
   dashFx: {fileID: 0}
   model: {fileID: 0}
+  currentCooldownUpgrades: 0
 --- !u!4 &1069808967
 Transform:
   m_ObjectHideFlags: 0
@@ -20321,6 +20343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1069808966}
+  upgrades: {fileID: 0}
 --- !u!1 &1071122904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a3cba995f22226849bcd666040b700a8, type: 3}
