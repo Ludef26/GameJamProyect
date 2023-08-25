@@ -85,7 +85,23 @@ public class PlayerMove : MonoBehaviour
         if (glide > 0.1f && glideTimer > 0)
         {
             modelAnimator.SetBool("Glide", true);
-           // Debug.Log(glide);
+            if (inputVector.x > 0)
+            {
+                modelAnimator.SetBool("GlideLeft", false);
+                modelAnimator.SetBool("GlideRight", true);
+            }
+            else if (inputVector.x < 0)
+            {
+                modelAnimator.SetBool("GlideLeft", true);
+                modelAnimator.SetBool("GlideRight", false);
+            }
+            else
+            {
+                modelAnimator.SetBool("GlideLeft", false);
+                modelAnimator.SetBool("GlideRight", false);
+                modelAnimator.SetBool("Glide", true);
+            }
+            // Debug.Log(glide);
             currentSpeedMove = speedGlide;
             currentSpeedFall = slowGlide;
             glideTimer -= Time.deltaTime;
@@ -95,6 +111,8 @@ public class PlayerMove : MonoBehaviour
         else if (glide > 0.1f && glideTimer <= 0)
         {
             modelAnimator.SetBool("Glide", false);
+            modelAnimator.SetBool("GlideRight", false);
+            modelAnimator.SetBool("GlideLeft", false);
             Debug.Log("entra2");
             currentSpeedMove = defaultSpeedMove;
             currentSpeedFall = defaultSpeedFall;
@@ -103,6 +121,8 @@ public class PlayerMove : MonoBehaviour
         else
         {
             modelAnimator.SetBool("Glide", false);
+            modelAnimator.SetBool("GlideRight", false);
+            modelAnimator.SetBool("GlideLeft", false);
             currentSpeedMove = defaultSpeedMove;
             currentSpeedFall = defaultSpeedFall;
         }
