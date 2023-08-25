@@ -56,7 +56,7 @@ public class MenuManager : MonoBehaviour
 
     private IEnumerator DelayClickSound()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         clickGO.GetComponent<AudioSource>().enabled = true;
     }
 }
