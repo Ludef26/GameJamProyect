@@ -14,7 +14,7 @@ public class SavePlayerValues : MonoBehaviour
     {
         PlayerPrefs.SetFloat("Puntuation", player.puntuantion);
         PlayerPrefs.SetFloat("DashCooldown", player.dashCooldown);
-        PlayerPrefs.SetFloat("CurrentCooldownUpgrades", upgrades.currentCooldownUpgrades);
+        PlayerPrefs.SetInt("CurrentCooldownUpgrades", upgrades.currentCooldownUpgrades);
     }
 
     public void loadPlayerStats()
