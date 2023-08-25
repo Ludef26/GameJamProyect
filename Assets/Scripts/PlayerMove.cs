@@ -27,6 +27,7 @@ public class PlayerMove : MonoBehaviour
     public AudioClip dashFx;
     public GameObject model;
     private Animator modelAnimator;
+    public float currentCooldownUpgrades = 0;
     private void Awake()
     {
         glideMaxTime = glideTimer;

@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerUpgrades : MonoBehaviour
 {
     private PlayerMove playerStats;
+    public float dashCooldownReduction = 0.2f;
+    public int maxDashCooldownUpgrade = 5, currentCooldownUpgrades = 0;
+    public float dashCooldownCost = 1000;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,10 +16,11 @@ public class PlayerUpgrades : MonoBehaviour
 
     public void upgradeDashCooldown()
     {
-        if (playerStats.dashCooldown > 1.0f && playerStats.puntuantion >= 100)
+        if (currentCooldownUpgrades < maxDashCooldownUpgrade && playerStats.puntuantion >= dashCooldownCost)
         {
-            playerStats.puntuantion -= 100;
-            playerStats.dashCooldown -= 0.2f;
+            currentCooldownUpgrades++;
+            playerStats.puntuantion -= dashCooldownCost;
+            playerStats.dashCooldown -= dashCooldownReduction;
         }
     }
     public void AddLife()
