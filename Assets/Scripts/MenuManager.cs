@@ -8,7 +8,7 @@ using UnityEngine.EventSystems;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject optionsWindow, backButton, playButton;
+    public GameObject optionsWindow, controlsWindow, backButtonOptions, backButtonControls, playButton;
     public EventSystem eventSystem;
 
     private void Start()
@@ -19,12 +19,24 @@ public class MenuManager : MonoBehaviour
     public void DisplayOptionsWindow()
     {
         optionsWindow.SetActive(true);
-        eventSystem.SetSelectedGameObject(backButton);
+        eventSystem.SetSelectedGameObject(backButtonOptions);
     }
 
     public void HideOptionsWindow()
     {
         optionsWindow.SetActive(false);
+        eventSystem.SetSelectedGameObject(playButton);
+    }
+
+    public void DisplayControlsWindow()
+    {
+        controlsWindow.SetActive(true);
+        eventSystem.SetSelectedGameObject(backButtonControls);
+    }
+
+    public void HideControlsWindow()
+    {
+        controlsWindow.SetActive(false);
         eventSystem.SetSelectedGameObject(playButton);
     }
 
