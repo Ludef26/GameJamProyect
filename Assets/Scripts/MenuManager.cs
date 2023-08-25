@@ -8,9 +8,13 @@ using UnityEngine.EventSystems;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject optionsWindow, controlsWindow, backButtonOptions, backButtonControls, playButton;
+    public GameObject optionsWindow, controlsWindow, backButtonOptions, backButtonControls, playButton, clickGO;
     public EventSystem eventSystem;
 
+    private void Awake()
+    {
+        StartCoroutine(DelayClickSound());
+    }
     private void Start()
     {
         eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
@@ -48,5 +52,11 @@ public class MenuManager : MonoBehaviour
     public void Salir()
     {
         Application.Quit();
+    }
+
+    private IEnumerator DelayClickSound()
+    {
+        yield return new WaitForSeconds(0.5f);
+        clickGO.GetComponent<AudioSource>().enabled = true;
     }
 }
