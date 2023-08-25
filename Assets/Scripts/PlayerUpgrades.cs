@@ -8,6 +8,19 @@ public class PlayerUpgrades : MonoBehaviour
     public float dashCooldownReduction = 0.2f;
     public int maxDashCooldownUpgrade = 5, currentCooldownUpgrades = 0;
     public float dashCooldownCost = 1000;
+
+    public float glideMovementUpgrade = 5.0f;
+    public int maxglideMovementUpgrade = 5, currentglideMovementUpgrade = 0;
+    public float glideMovementUpgradeCost = 1000;
+
+    public float glideTimerUpgrade = 1.0f;
+    public int maxglideTimerUpgrade = 5, currentglideTimerUpgrade = 0;
+    public float glideTimerUpgradeCost = 1000;
+
+    public int lifeUpgrade = 1;
+    public int maxLifesUpgrade = 2, currentglideLifesUpgrade = 0;
+    public float lifeUpgradeCost = 1000;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,23 +38,29 @@ public class PlayerUpgrades : MonoBehaviour
     }
     public void AddLife()
     {
-        if (playerStats.lifes < 2)
+        if (currentglideLifesUpgrade < maxLifesUpgrade && playerStats.puntuantion >= lifeUpgradeCost)
         {
-            playerStats.lifes += 1;
+            currentglideLifesUpgrade++;
+            playerStats.puntuantion -= lifeUpgradeCost;
+            playerStats.dashCooldown -= lifeUpgrade;
         }
     }
     public void upgradeGlideMovement()
     {
-        if (playerStats.speedGlide < 40)
+        if (currentglideMovementUpgrade < maxglideMovementUpgrade && playerStats.puntuantion >= glideMovementUpgradeCost)
         {
-            playerStats.speedGlide += 5;
+            currentglideMovementUpgrade++;
+            playerStats.puntuantion -= glideMovementUpgradeCost;
+            playerStats.speedGlide += glideMovementUpgrade;
         }
     }
     public void upgradeGlideTimer()
     {
-        if (playerStats.glideTimer < 8)
+        if (currentglideMovementUpgrade < maxglideTimerUpgrade && playerStats.puntuantion >= glideTimerUpgradeCost)
         {
-            playerStats.glideTimer += 1;
+            currentglideMovementUpgrade++;
+            playerStats.puntuantion -= glideTimerUpgradeCost;
+            playerStats.glideTimer += glideTimerUpgrade;
         }
     }
 }
