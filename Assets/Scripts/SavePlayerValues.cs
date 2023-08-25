@@ -12,11 +12,13 @@ public class SavePlayerValues : MonoBehaviour
     public void SetPlayerStats()
     {
         PlayerPrefs.SetFloat("Puntuation", player.puntuantion);
+        PlayerPrefs.SetFloat("DashCooldown", player.dashCooldown);
     }
 
     public void loadPlayerStats()
     {
         player.puntuantion = PlayerPrefs.GetFloat("Puntuation");
+        player.puntuantion = PlayerPrefs.GetFloat("DashCooldown");
     }
 
     
