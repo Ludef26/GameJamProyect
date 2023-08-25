@@ -66,11 +66,11 @@ public class PlayerMove : MonoBehaviour
         glide = playerInput.PlayerMove.Glide.ReadValue<float>();
         dash = playerInput.PlayerMove.Dash.ReadValue<float>();
 
-        if(inputVector.x > 0.3)
+        if(inputVector.x > 0)
         {
             modelAnimator.SetBool("LeftMove", false);
             modelAnimator.SetBool("RightMove", true);
-        } else if (inputVector.x < 0.3) 
+        } else if (inputVector.x < 0) 
         {
             modelAnimator.SetBool("LeftMove", true);
             modelAnimator.SetBool("RightMove", false);

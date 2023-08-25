@@ -6,7 +6,6 @@ public class CollisionDetection : MonoBehaviour
 {
     private GameManager gameManager;
     private int lifes;
-    public GameObject canvasUpgrades, hud;
 
     private void Start()
     {
@@ -21,9 +20,7 @@ public class CollisionDetection : MonoBehaviour
             lifes--;
             if (lifes < 0)
             {
-                Time.timeScale = 0;
-                canvasUpgrades.SetActive(true);
-                hud.SetActive(false);
+                gameManager.RestartLevel();
             }
             else
             {
