@@ -23,7 +23,8 @@ public class PlayerMove : MonoBehaviour
     public float puntuantion = 0;
     private SavePlayerValues PlayerStats;
     public int lifes = 1;
-
+    private AudioSource audioSource;
+    public AudioClip dashFx;
     private void Awake()
     {
         glideMaxTime = glideTimer;
@@ -39,6 +40,7 @@ public class PlayerMove : MonoBehaviour
         auxdashCooldown = 0;
         PlayerStats = GetComponent<SavePlayerValues>();
         PlayerStats.loadPlayerStats();
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Update()
@@ -79,9 +81,11 @@ public class PlayerMove : MonoBehaviour
 
         if(dash > 0.1f && !dashing && !onCooldown)
         {
+            audioSource.PlayOneShot(dashFx);
             if (inputVector.x != 0f || inputVector.y != 0f)
             {
                 normalDash = true;
+
             }
             else
             {
