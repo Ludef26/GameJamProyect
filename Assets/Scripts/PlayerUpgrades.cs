@@ -13,8 +13,9 @@ public class PlayerUpgrades : MonoBehaviour
 
     public void upgradeDashCooldown()
     {
-        if (playerStats.dashCooldown > 1.0f)
+        if (playerStats.dashCooldown > 1.0f && playerStats.puntuantion >= 100)
         {
+            playerStats.puntuantion -= 100;
             playerStats.dashCooldown -= 0.2f;
         }
     }
