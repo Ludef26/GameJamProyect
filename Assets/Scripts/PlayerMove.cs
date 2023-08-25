@@ -6,11 +6,11 @@ public class PlayerMove : MonoBehaviour
 {
     public float defaultSpeedMove, defaultSpeedFall, speedGlide, slowGlide, glideTimer;
     private float currentSpeedMove, currentSpeedFall, glideMaxTime;
-    public GameObject player;
+    public GameObject player, canvas, hudGO;
     private Rigidbody rb;
-    private Inputs playerInput;
+    public Inputs playerInput;
     private Vector2 inputVector;
-    private float glide = 0f;
+    private float glide = 0f, options;
     private float dash = 0f;
     private HUDManager hud;
     public float dashTime;
@@ -34,6 +34,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         hud = GameObject.Find("HUD").GetComponent<HUDManager>();
+        hudGO = GameObject.Find("HUD");
         rb = GetComponent<Rigidbody>();
         playerInput = new Inputs();
         playerInput.PlayerMove.Enable();
@@ -45,7 +46,15 @@ public class PlayerMove : MonoBehaviour
 
     public void Update()
     {
-        
+        options = playerInput.PlayerMove.Pause.ReadValue<float>();
+
+        if (options > 0.1f)
+        {
+            playerInput.PlayerMove.Disable();
+            Time.timeScale = 0;
+            hudGO.SetActive(false);
+            canvas.SetActive(true);
+        }
     }
 
     private void FixedUpdate()
@@ -132,5 +141,12 @@ public class PlayerMove : MonoBehaviour
 
         puntuantion += transform.up.normalized.magnitude;
         //Debug.Log(puntuantion);
+    }
+
+    public IEnumerator RecoverControl()
+    {
+        hudGO.SetActive(true);
+        yield return new WaitForSeconds(0.15f);
+        playerInput.PlayerMove.Enable();
     }
 }

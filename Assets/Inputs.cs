@@ -53,6 +53,15 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": ""Tap"",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Value"",
+                    ""id"": ""8ea5af9e-5d7e-4555-91a0-4607fd991441"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": """",
+                    ""interactions"": ""Tap"",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -297,6 +306,28 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
                     ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""68348850-a9a6-445b-9f1f-042580eac5f8"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b927d1d6-e0af-478e-b0d9-a583d4b3d86b"",
+                    ""path"": ""<Gamepad>/start"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -308,6 +339,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         m_PlayerMove_MoveAxis = m_PlayerMove.FindAction("MoveAxis", throwIfNotFound: true);
         m_PlayerMove_Glide = m_PlayerMove.FindAction("Glide", throwIfNotFound: true);
         m_PlayerMove_Dash = m_PlayerMove.FindAction("Dash", throwIfNotFound: true);
+        m_PlayerMove_Pause = m_PlayerMove.FindAction("Pause", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -372,6 +404,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
     private readonly InputAction m_PlayerMove_MoveAxis;
     private readonly InputAction m_PlayerMove_Glide;
     private readonly InputAction m_PlayerMove_Dash;
+    private readonly InputAction m_PlayerMove_Pause;
     public struct PlayerMoveActions
     {
         private @Inputs m_Wrapper;
@@ -379,6 +412,7 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         public InputAction @MoveAxis => m_Wrapper.m_PlayerMove_MoveAxis;
         public InputAction @Glide => m_Wrapper.m_PlayerMove_Glide;
         public InputAction @Dash => m_Wrapper.m_PlayerMove_Dash;
+        public InputAction @Pause => m_Wrapper.m_PlayerMove_Pause;
         public InputActionMap Get() { return m_Wrapper.m_PlayerMove; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -397,6 +431,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IPlayerMoveActions instance)
@@ -410,6 +447,9 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IPlayerMoveActions instance)
@@ -432,5 +472,6 @@ public partial class @Inputs: IInputActionCollection2, IDisposable
         void OnMoveAxis(InputAction.CallbackContext context);
         void OnGlide(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
 }
