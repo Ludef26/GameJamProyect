@@ -25,6 +25,8 @@ public class PlayerMove : MonoBehaviour
     public int lifes = 1;
     private AudioSource audioSource;
     public AudioClip dashFx;
+    public GameObject model;
+    private Animator modelAnimator;
     private void Awake()
     {
         glideMaxTime = glideTimer;
@@ -42,6 +44,7 @@ public class PlayerMove : MonoBehaviour
         PlayerStats = GetComponent<SavePlayerValues>();
         PlayerStats.loadPlayerStats();
         audioSource = GetComponent<AudioSource>();
+        modelAnimator = model.GetComponent<Animator>();
     }
 
     public void Update()
@@ -63,11 +66,25 @@ public class PlayerMove : MonoBehaviour
         glide = playerInput.PlayerMove.Glide.ReadValue<float>();
         dash = playerInput.PlayerMove.Dash.ReadValue<float>();
 
+        if(inputVector.x > 0)
+        {
+            modelAnimator.SetBool("LeftMove", false);
+            modelAnimator.SetBool("RightMove", true);
+        } else if (inputVector.x < 0) 
+        {
+            modelAnimator.SetBool("LeftMove", true);
+            modelAnimator.SetBool("RightMove", false);
+        } else
+        {
+            modelAnimator.SetBool("LeftMove", false);
+            modelAnimator.SetBool("RightMove", false);
+        }
         //Debug.Log(inputVector);
         inputVector = inputVector.normalized;
 
         if (glide > 0.1f && glideTimer > 0)
         {
+            modelAnimator.SetBool("Glide", true);
            // Debug.Log(glide);
             currentSpeedMove = speedGlide;
             currentSpeedFall = slowGlide;
@@ -77,6 +94,7 @@ public class PlayerMove : MonoBehaviour
         }
         else if (glide > 0.1f && glideTimer <= 0)
         {
+            modelAnimator.SetBool("Glide", false);
             Debug.Log("entra2");
             currentSpeedMove = defaultSpeedMove;
             currentSpeedFall = defaultSpeedFall;
@@ -84,6 +102,7 @@ public class PlayerMove : MonoBehaviour
         }
         else
         {
+            modelAnimator.SetBool("Glide", false);
             currentSpeedMove = defaultSpeedMove;
             currentSpeedFall = defaultSpeedFall;
         }
