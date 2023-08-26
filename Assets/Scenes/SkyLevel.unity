@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6082669, g: 0.91816115, b: 0.9750506, a: 1}
+  m_IndirectSpecularColor: {r: 0.60835356, g: 0.91820574, b: 0.9750362, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5826,6 +5826,11 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!1 &326257219 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2749339045561682212, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+  m_PrefabInstance: {fileID: 913562507}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &329021828 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1759386336543308232, guid: a3cba995f22226849bcd666040b700a8, type: 3}
@@ -6913,6 +6918,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011695518034, guid: 465c505844950da499dcf096a6da4409, type: 3}
   m_PrefabInstance: {fileID: 1214843792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &364864842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5065997775928770449, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+  m_PrefabInstance: {fileID: 913562507}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &365758263
 PrefabInstance:
@@ -8612,6 +8622,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000011695518034, guid: 465c505844950da499dcf096a6da4409, type: 3}
   m_PrefabInstance: {fileID: 452405825}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &452994991 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6821415657912783299, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+  m_PrefabInstance: {fileID: 913562507}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &458899161
 GameObject:
   m_ObjectHideFlags: 0
@@ -8718,6 +8733,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300016, guid: 62a1903fd3708d7499742985e02168a7, type: 3}
+--- !u!1 &466522570 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6814639113095804357, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+  m_PrefabInstance: {fileID: 913562507}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &466541406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9399,7 +9419,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f5f3a2b83254ee84d9272b70f598e057, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a876afd90fcd3c34a8a50c273c170779, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 784585160}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a876afd90fcd3c34a8a50c273c170779, type: 3}
       insertIndex: -1
@@ -10348,7 +10371,7 @@ MonoBehaviour:
   defaultSpeedFall: 70
   slowGlide: 40
   glideMaxTime: 0
-  glideMaxMove: 0
+  glideMaxMove: 15
   player: {fileID: 554776043}
   canvas: {fileID: 1489938923}
   hudGO: {fileID: 0}
@@ -10378,7 +10401,6 @@ Transform:
   m_Children:
   - {fileID: 1570104936}
   - {fileID: 1570249475}
-  - {fileID: 784585160}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!54 &554776046
@@ -10548,7 +10570,7 @@ MonoBehaviour:
   maxDashCooldownUpgrade: 5
   currentCooldownUpgrades: 0
   dashCooldownCost: 1000
-  glideMovementUpgrade: 5
+  glideMovementUpgrade: 1
   maxglideMovementUpgrade: 5
   currentglideMovementUpgrade: 0
   glideMovementUpgradeCost: 1000
@@ -14604,12 +14626,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784585159}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.21588361, y: -0.6733456, z: 0.21588361, w: 0.6733456}
-  m_LocalPosition: {x: -0.12199976, y: 2.5, z: 0.082031235}
-  m_LocalScale: {x: 1, y: 3.2297997, z: 1}
+  m_LocalRotation: {x: -0.18585789, y: -0.57969487, z: 0.24221535, w: 0.755475}
+  m_LocalPosition: {x: 0.002105671, y: 0.053818893, z: 0.016960856}
+  m_LocalScale: {x: 0.03624502, y: 0.11706414, z: 0.03624502}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 554776045}
+  m_Father: {fileID: 1570249475}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 35.553}
 --- !u!136 &784585161
 CapsuleCollider:
@@ -18369,6 +18391,14 @@ PrefabInstance:
       propertyPath: m_text
       value: 4s
       objectReference: {fileID: 0}
+    - target: {fileID: 2048709154978735901, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 2749339045561682212, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: LifesCurrentValue
+      objectReference: {fileID: 0}
     - target: {fileID: 3819513175410312668, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_Name
       value: CanvasUpgrades
@@ -18377,9 +18407,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4038565871539173495, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 85
+      objectReference: {fileID: 0}
     - target: {fileID: 4082251089200092442, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_Name
       value: GlideNextValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 4961690892949513200, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: GlideCtrlCostBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 5065997775928770449, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: LifesCostBox
       objectReference: {fileID: 0}
     - target: {fileID: 5589380651027767802, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_Name
@@ -18389,13 +18431,89 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlideArrow
       objectReference: {fileID: 0}
+    - target: {fileID: 6061767296924260847, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061767296924260847, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061767296924260847, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 554776051}
+    - target: {fileID: 6061767296924260847, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061767296924260847, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddLife
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061767296924260847, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerUpgrades, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061767296924260847, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6165795871787163462, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_text
       value: 3s
       objectReference: {fileID: 0}
+    - target: {fileID: 6175856993857113803, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175856993857113803, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175856993857113803, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 554776051}
+    - target: {fileID: 6175856993857113803, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175856993857113803, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: upgradeGlideMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175856993857113803, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerUpgrades, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6175856993857113803, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6298482578509921602, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: GlideCtrlNextValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452854537940456430, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: LifesCost
+      objectReference: {fileID: 0}
     - target: {fileID: 6518370575155614795, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_UpdateMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621540398331306142, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6814639113095804357, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: LifesNextValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6821415657912783299, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: LifesArrow
       objectReference: {fileID: 0}
     - target: {fileID: 7153263585645821079, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -18509,6 +18627,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GlideCost
       objectReference: {fileID: 0}
+    - target: {fileID: 8260512483697936788, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: GlideCtrlArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749120237033425781, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 85
+      objectReference: {fileID: 0}
+    - target: {fileID: 9020853000049761048, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: GlideCtrlCost
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043803669994482631, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_Name
+      value: GlideCtrlCurrentValue
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7264448225519305796, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
     m_RemovedGameObjects: []
@@ -18551,11 +18685,11 @@ MonoBehaviour:
   glideCtrlCostGO: {fileID: 529921791}
   glideCtrlArrowGO: {fileID: 1416967047}
   glideCtrlCostBoxGO: {fileID: 657640081}
-  lifesCurrentValueGO: {fileID: 0}
-  lifesNextValueGO: {fileID: 0}
-  lifesCostGO: {fileID: 0}
-  lifesArrowGO: {fileID: 0}
-  LifesCostBoxGO: {fileID: 0}
+  lifesCurrentValueGO: {fileID: 326257219}
+  lifesNextValueGO: {fileID: 466522570}
+  lifesCostGO: {fileID: 1591395336}
+  lifesArrowGO: {fileID: 452994991}
+  LifesCostBoxGO: {fileID: 364864842}
   dashCDMaxed: 0
   glideTimeMaxed: 0
   glideCtrlMaxed: 0
@@ -23674,7 +23808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -31193,6 +31327,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000011695518034, guid: 465c505844950da499dcf096a6da4409, type: 3}
   m_PrefabInstance: {fileID: 1663127572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1591395336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6452854537940456430, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+  m_PrefabInstance: {fileID: 913562507}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1591818073
 GameObject:

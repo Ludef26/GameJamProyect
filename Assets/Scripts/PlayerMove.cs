@@ -32,7 +32,8 @@ public class PlayerMove : MonoBehaviour
     public bool newGame;
     private void Awake()
     {
-        
+        PlayerStats = GetComponent<SavePlayerValues>();
+        PlayerStats.loadPlayerStats();
     }
 
     void Start()
@@ -43,8 +44,6 @@ public class PlayerMove : MonoBehaviour
         playerInput = new Inputs();
         playerInput.PlayerMove.Enable();
         auxdashCooldown = 0;
-        PlayerStats = GetComponent<SavePlayerValues>();
-        PlayerStats.loadPlayerStats();
         audioSource = GetComponent<AudioSource>();
         modelAnimator = model.GetComponent<Animator>();
         if (newGame)

@@ -15,7 +15,7 @@ public class PhaseRotation2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Player")
+        if(other.gameObject.name == "ColliderPlayer")
         {
             StartCoroutine(GradualPlayerRotation());
         } 

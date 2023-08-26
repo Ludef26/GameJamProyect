@@ -56,6 +56,15 @@ public class PlayerUpgrades : MonoBehaviour
             currentglideLifesUpgrade++;
             playerStats.puntuantion -= lifeUpgradeCost;
             playerStats.MaxLifes += lifeUpgrade;
+
+            if(currentglideLifesUpgrade != maxLifesUpgrade)
+            {
+                upgradesUI.UpdateLifesCard();
+            }
+            else
+            {
+                upgradesUI.MaxLifesCard();
+            }
         }
     }
     public void upgradeGlideMovement()

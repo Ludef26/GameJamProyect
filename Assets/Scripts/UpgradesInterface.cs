@@ -32,7 +32,7 @@ public class UpgradesInterface : MonoBehaviour
         //dash CD
         dashCurrentValue = dashCurrentValueGO.GetComponent<TMP_Text>();
         dashNextValue = dashNextValueGO.GetComponent<TMP_Text>();
-        if (!dashCDMaxed)
+        if (playerUpgradesScript.currentCooldownUpgrades < playerUpgradesScript.maxDashCooldownUpgrade)
         {
             dashCurrentValue.text = Mathf.Clamp(playerMoveScript.dashCooldown, 1, 2).ToString() + "S";
             dashNextValue.text = Mathf.Clamp((playerMoveScript.dashCooldown - playerUpgradesScript.dashCooldownReduction), 1, 2).ToString() + "S";
@@ -51,7 +51,7 @@ public class UpgradesInterface : MonoBehaviour
         //glide time
         glideCurrentValue = glideCurrentValueGO.GetComponent<TMP_Text>();
         glideNextValue = glideNextValueGO.GetComponent<TMP_Text>();
-        if (!glideTimeMaxed)
+        if (playerUpgradesScript.currentglideTimerUpgrade < playerUpgradesScript.maxglideTimerUpgrade)
         {
             glideCurrentValue.text = playerMoveScript.glideMaxTime.ToString() + "S";
             glideNextValue.text = (playerMoveScript.glideMaxTime + playerUpgradesScript.glideTimerUpgrade).ToString() +"S";
@@ -69,8 +69,8 @@ public class UpgradesInterface : MonoBehaviour
 
         //glidecontrol
         glideCtrlCurrentValue = glideCtrlCurrentValueGO.GetComponent<TMP_Text>();
-        glideCtrlNextValue = glideCtrlNextValue.GetComponent<TMP_Text>();
-        if (!glideCtrlMaxed)
+        glideCtrlNextValue = glideCtrlNextValueGO.GetComponent<TMP_Text>();
+        if (playerUpgradesScript.currentglideMovementUpgrade < playerUpgradesScript.maxglideMovementUpgrade)
         {
             glideCtrlCurrentValue.text = playerMoveScript.glideMaxMove.ToString();
             glideCtrlNextValue.text = (playerMoveScript.glideMaxMove + playerUpgradesScript.glideMovementUpgrade).ToString();
@@ -89,7 +89,7 @@ public class UpgradesInterface : MonoBehaviour
         //extra lifes
         lifesCurrentValue = lifesCurrentValueGO.GetComponent<TMP_Text>();
         lifesNextValue = glideCtrlNextValue.GetComponent<TMP_Text>();
-        if (!lifesMaxed)
+        if (playerUpgradesScript.currentglideLifesUpgrade < playerUpgradesScript.maxLifesUpgrade)
         {
             lifesCurrentValue.text = playerMoveScript.MaxLifes.ToString();
             lifesNextValue.text = (playerMoveScript.MaxLifes + playerUpgradesScript.lifeUpgrade).ToString();
@@ -125,8 +125,8 @@ public class UpgradesInterface : MonoBehaviour
 
     public void UpdateGlideSecondsCard()
     {
-        glideCurrentValue.text = (playerMoveScript.glideMaxTime + playerUpgradesScript.glideTimerUpgrade).ToString() + "S";
-        glideNextValue.text = (playerMoveScript.glideMaxTime + playerUpgradesScript.glideTimerUpgrade + playerUpgradesScript.glideTimerUpgrade).ToString() + "S";
+        glideCurrentValue.text = playerMoveScript.glideMaxTime.ToString() + "S";
+        glideNextValue.text = (playerMoveScript.glideMaxTime + playerUpgradesScript.glideTimerUpgrade).ToString() + "S";
     }
 
     public void MaxGlideSecondsCard()
@@ -141,8 +141,8 @@ public class UpgradesInterface : MonoBehaviour
 
     public void UpdateGlideControlCard()
     {
-        glideCtrlCurrentValue.text = (playerMoveScript.glideMaxMove + playerUpgradesScript.glideMovementUpgrade).ToString();
-        glideCtrlNextValue.text = (playerMoveScript.glideMaxMove + playerUpgradesScript.glideMovementUpgrade + playerUpgradesScript.glideMovementUpgrade).ToString();
+        glideCtrlCurrentValue.text = playerMoveScript.glideMaxMove.ToString();
+        glideCtrlNextValue.text = (playerMoveScript.glideMaxMove + playerUpgradesScript.glideMovementUpgrade).ToString();
     }
 
     public void MaxGlideControlCard()
@@ -157,8 +157,8 @@ public class UpgradesInterface : MonoBehaviour
 
     public void UpdateLifesCard()
     {
-        lifesCurrentValue.text = (playerMoveScript.MaxLifes + playerUpgradesScript.lifeUpgrade).ToString();
-        lifesNextValue.text = (playerMoveScript.MaxLifes + playerUpgradesScript.lifeUpgrade + playerUpgradesScript.lifeUpgrade).ToString();
+        lifesCurrentValue.text = playerMoveScript.MaxLifes.ToString();
+        lifesNextValue.text = (playerMoveScript.MaxLifes + playerUpgradesScript.lifeUpgrade).ToString();
     }
 
     public void MaxLifesCard()
