@@ -47,13 +47,13 @@ public class UpgradesInterface : MonoBehaviour
         }
 
         //glide time
-        /*glideCurrentValue = dashCurrentValueGO.GetComponent<TMP_Text>();
-        glideNextValue = dashNextValueGO.GetComponent<TMP_Text>();
+        glideCurrentValue = glideCurrentValueGO.GetComponent<TMP_Text>();
+        glideNextValue = glideNextValueGO.GetComponent<TMP_Text>();
         if (!glideTimeMaxed)
         {
             glideCurrentValue.text = playerMoveScript.glideMaxTime.ToString() + "S";
-            glideNextValue.text = (playerMoveScript.glideMaxTime + playerUpgradesScript.glideMovementUpgrade).ToString() +"S";
-            glideCost = dashCostGO.GetComponent<TMP_Text>();
+            glideNextValue.text = (playerMoveScript.glideMaxTime + playerUpgradesScript.glideTimerUpgrade).ToString() +"S";
+            glideCost = glideCostGO.GetComponent<TMP_Text>();
             glideCost.text = playerUpgradesScript.glideTimerUpgradeCost.ToString() + "P";
         }
         else
@@ -63,7 +63,7 @@ public class UpgradesInterface : MonoBehaviour
             glideNextValueGO.SetActive(false);
             glideArrowGO.SetActive(false);
             glideCostBoxGO.SetActive(false);
-        }*/
+        }
     }
 
     public void UpdateDashCDCard()
