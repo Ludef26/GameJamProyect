@@ -46,13 +46,6 @@ public class PlayerMove : MonoBehaviour
         auxdashCooldown = 0;
         audioSource = GetComponent<AudioSource>();
         modelAnimator = model.GetComponent<Animator>();
-        if (newGame)
-        {
-            glideMaxTime = 3;
-            glideMaxMove = 15;
-            dashCooldown = 2;
-            MaxLifes = 0;
-        }
         glideTimer = glideMaxTime;
         speedGlide = glideMaxMove;
         auxDashTime = dashTime;

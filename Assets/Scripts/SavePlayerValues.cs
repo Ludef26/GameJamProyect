@@ -28,6 +28,11 @@ public class SavePlayerValues : MonoBehaviour
             upgrades.currentglideMovementUpgrade = 0;
             upgrades.currentglideTimerUpgrade = 0;
             upgrades.currentglideLifesUpgrade = 0;
+
+            player.glideMaxTime = 3;
+            player.glideMaxMove = 15;
+            player.dashCooldown = 2;
+            player.MaxLifes = 0;
             player.newGame = true;
         }
         else
