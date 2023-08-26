@@ -9,7 +9,7 @@ public class PlayerUpgrades : MonoBehaviour
     public int maxDashCooldownUpgrade = 5, currentCooldownUpgrades = 0;
     public float dashCooldownCost = 1000;
 
-    public float glideMovementUpgrade = 5.0f;
+    public float glideMovementUpgrade = 1.0f;
     public int maxglideMovementUpgrade = 5, currentglideMovementUpgrade = 0;
     public float glideMovementUpgradeCost = 1000;
 
