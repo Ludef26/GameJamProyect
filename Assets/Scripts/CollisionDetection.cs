@@ -22,7 +22,7 @@ public class CollisionDetection : MonoBehaviour
         if(collision.gameObject.tag == "Obstacle")
         {
             GetComponent<PlayerMove>().lifes--;
-            audioSource.PlayOneShot(impactFX);
+            audioSource.PlayOneShot(impactFX, 1.8f);
             if (GetComponent<PlayerMove>().lifes < 0)
             {
                 Time.timeScale = 0;
@@ -39,7 +39,7 @@ public class CollisionDetection : MonoBehaviour
         }
         if(collision.gameObject.tag == "Molino")
         {
-            audioSource.PlayOneShot(impactFX);
+            audioSource.PlayOneShot(impactFX, 1.8f);
             GetComponent<PlayerMove>().lifes--;
             collision.collider.enabled = false;
             if (GetComponent<PlayerMove>().lifes < 0)

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6080754, g: 0.91811705, b: 0.97503275, a: 1}
+  m_IndirectSpecularColor: {r: 0.60816556, g: 0.9181282, b: 0.9750356, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &282962564 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5882970337567652916, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+  m_PrefabInstance: {fileID: 2815014232077367298}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &575708501 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 177947271440012051, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
@@ -303,7 +314,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 2107318373}
+    m_SelectOnUp: {fileID: 743472987}
     m_SelectOnDown: {fileID: 1257205763}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -399,6 +410,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4037645534178750386, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
   m_PrefabInstance: {fileID: 2815014232077367298}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &743472987 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5727922894424879357, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+  m_PrefabInstance: {fileID: 2815014232077367298}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743472985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &825356912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1150,17 +1172,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 134580193575813494, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
   m_PrefabInstance: {fileID: 2815014232077367298}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2107318373 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3954903480709755454, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
-  m_PrefabInstance: {fileID: 2815014232077367298}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &391269848178391953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1424,6 +1435,18 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2670987144420582614, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670987144420582614, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+      propertyPath: m_Navigation.m_SelectOnUp
+      value: 
+      objectReference: {fileID: 731943192}
+    - target: {fileID: 2670987144420582614, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 282962564}
+    - target: {fileID: 2670987144420582614, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -1527,6 +1550,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5727922894424879357, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
+      propertyPath: m_Navigation.m_SelectOnDown
+      value: 
+      objectReference: {fileID: 731943192}
     - target: {fileID: 5727922894424879357, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2

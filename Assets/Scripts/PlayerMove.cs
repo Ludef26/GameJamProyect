@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
     public float defaultSpeedMove, defaultSpeedFall, slowGlide;
     private float currentSpeedMove, currentSpeedFall, glideTimer, speedGlide;
     public float glideMaxTime, glideMaxMove;
-    public GameObject player, canvas, hudGO;
+    public GameObject player, canvas, hudGO, canvasUpgrades;
     private Rigidbody rb;
     public Inputs playerInput;
     private Vector2 inputVector;
@@ -55,12 +55,15 @@ public class PlayerMove : MonoBehaviour
     {
         options = playerInput.PlayerMove.Pause.ReadValue<float>();
 
-        if (options > 0.1f)
+        if (canvasUpgrades.activeInHierarchy == false)
         {
-            playerInput.PlayerMove.Disable();
-            Time.timeScale = 0;
-            hudGO.SetActive(false);
-            canvas.SetActive(true);
+            if (options > 0.1f)
+            {
+                playerInput.PlayerMove.Disable();
+                Time.timeScale = 0;
+                hudGO.SetActive(false);
+                canvas.SetActive(true);
+            }
         }
     }
 
@@ -133,7 +136,7 @@ public class PlayerMove : MonoBehaviour
 
         if(dash > 0.1f && !dashing && !onCooldown)
         {
-            audioSource.PlayOneShot(dashFx);
+            audioSource.PlayOneShot(dashFx, 1.2f);
             if (inputVector.x != 0f || inputVector.y != 0f)
             {
                 normalDash = true;

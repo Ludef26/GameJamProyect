@@ -8,6 +8,7 @@ public class PhaseRotation : MonoBehaviour
     public float targetXRotation = 48.5f;
     public float rotationMultiplier;
     private float actualRotation;
+    private bool isRotating = false;
 
     private void Start()
     {
@@ -19,10 +20,22 @@ public class PhaseRotation : MonoBehaviour
         if(other.gameObject.name == "ColliderPlayer")
         {
             actualRotation = player.transform.eulerAngles.x;
-            StartCoroutine(GradualPlayerRotation());
+            isRotating = true;
         } 
     }
-     
+
+    private void FixedUpdate()
+    {
+        if (isRotating)
+        {
+            player.transform.Rotate(-rotationMultiplier * Time.deltaTime, 0, 0);
+            if (player.transform.eulerAngles.x <= 360 + targetXRotation)
+            {
+                isRotating = false;
+            }
+        }
+    }
+
     private IEnumerator GradualPlayerRotation()
     {
         while(player.transform.eulerAngles.x >= 1.0f)
