@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6081395, g: 0.9181152, b: 0.97502023, a: 1}
+  m_IndirectSpecularColor: {r: 0.60813886, g: 0.9181139, b: 0.97501856, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28095,6 +28095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44245c9de15f2904b9f25c95b3bfc877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newGame: 0
 --- !u!4 &1430605934
 Transform:
   m_ObjectHideFlags: 0
@@ -41999,9 +42000,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3377251492314364947, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
+      propertyPath: lifes
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3377251492314364947, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
       propertyPath: canvas
       value: 
       objectReference: {fileID: 1489938923}
+    - target: {fileID: 3377251492314364947, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
+      propertyPath: newGame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3377251492314364947, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
+      propertyPath: puntuantion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4715613995927530397, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
       propertyPath: m_Name
       value: Player
