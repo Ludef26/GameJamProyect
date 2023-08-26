@@ -108,8 +108,8 @@ public class UpgradesInterface : MonoBehaviour
 
     public void UpdateDashCDCard()
     {
-        dashCurrentValue.text = Mathf.Clamp((playerMoveScript.dashCooldown - playerUpgradesScript.dashCooldownReduction), 1, 2).ToString() + "S";
-        dashNextValue.text = Mathf.Clamp((playerMoveScript.dashCooldown - playerUpgradesScript.dashCooldownReduction - playerUpgradesScript.dashCooldownReduction), 1, 2).ToString() + "S";
+        dashCurrentValue.text = Mathf.Clamp(playerMoveScript.dashCooldown, 1, 2).ToString() + "S";
+        dashNextValue.text = Mathf.Clamp((playerMoveScript.dashCooldown - playerUpgradesScript.dashCooldownReduction), 1, 2).ToString() + "S";
     }
 
     public void MaxDashCDCard()
