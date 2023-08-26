@@ -10,9 +10,9 @@ public class SavePlayerValues : MonoBehaviour
     {
         PlayerPrefs.SetFloat("Puntuation", player.puntuantion);
         PlayerPrefs.SetFloat("DashCooldown", player.dashCooldown);
-        PlayerPrefs.SetFloat("SpeedGlide", player.speedGlide);
-        PlayerPrefs.SetFloat("GlideTimer", player.glideTimer);
-        PlayerPrefs.SetInt("Lifes", player.lifes);
+        PlayerPrefs.SetFloat("GlideMaxMove", player.glideMaxMove);
+        PlayerPrefs.SetFloat("GlideMaxTimer", player.glideMaxTime);
+        PlayerPrefs.SetInt("MaxLifes", player.MaxLifes);
 
         PlayerPrefs.SetInt("CurrentCooldownUpgrades", upgrades.currentCooldownUpgrades);
         PlayerPrefs.SetInt("CurrentglideMovementUpgrade", upgrades.currentglideMovementUpgrade);
@@ -24,9 +24,9 @@ public class SavePlayerValues : MonoBehaviour
     {
         player.puntuantion = PlayerPrefs.GetFloat("Puntuation");
         player.dashCooldown = PlayerPrefs.GetFloat("DashCooldown");
-        player.speedGlide = PlayerPrefs.GetFloat("SpeedGlide");
-        player.glideTimer = PlayerPrefs.GetFloat("GlideTimer");
-        player.lifes = PlayerPrefs.GetInt("Lifes");
+        player.glideMaxMove = PlayerPrefs.GetFloat("GlideMaxMove");
+        player.glideMaxTime = PlayerPrefs.GetFloat("GlideMaxTimer");
+        player.MaxLifes = PlayerPrefs.GetInt("MaxLifes");
 
         upgrades.currentCooldownUpgrades = PlayerPrefs.GetInt("CurrentCooldownUpgrades");
         upgrades.currentglideMovementUpgrade = PlayerPrefs.GetInt("CurrentglideMovementUpgrade");

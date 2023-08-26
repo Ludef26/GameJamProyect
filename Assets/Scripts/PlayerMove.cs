@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float defaultSpeedMove, defaultSpeedFall, speedGlide, slowGlide, glideTimer;
-    private float currentSpeedMove, currentSpeedFall, glideMaxTime;
+    public float defaultSpeedMove, defaultSpeedFall, slowGlide;
+    private float currentSpeedMove, currentSpeedFall, glideTimer, speedGlide;
+    public float glideMaxTime, glideMaxMove;
     public GameObject player, canvas, hudGO;
     private Rigidbody rb;
     public Inputs playerInput;
@@ -15,7 +16,7 @@ public class PlayerMove : MonoBehaviour
     private HUDManager hud;
     public float dashTime;
     private bool dashing = false, normalDash;
-    private float auxDashTime;
+    public float auxDashTime;
     public float dashCooldown;
     private float auxdashCooldown;
     private bool onCooldown;
@@ -23,15 +24,17 @@ public class PlayerMove : MonoBehaviour
     public float puntuantion = 0;
     private SavePlayerValues PlayerStats;
     public int lifes = 1;
+    public int MaxLifes = 0;
     private AudioSource audioSource;
     public AudioClip dashFx;
     public GameObject model;
     private Animator modelAnimator;
-    public float currentCooldownUpgrades = 0;
     private void Awake()
     {
-        glideMaxTime = glideTimer;
+        glideTimer = glideMaxTime;
+        speedGlide = glideMaxMove;
         auxDashTime = dashTime;
+        lifes = MaxLifes;
     }
 
     void Start()

@@ -42,7 +42,7 @@ public class PlayerUpgrades : MonoBehaviour
         {
             currentglideLifesUpgrade++;
             playerStats.puntuantion -= lifeUpgradeCost;
-            playerStats.dashCooldown -= lifeUpgrade;
+            playerStats.MaxLifes += lifeUpgrade;
         }
     }
     public void upgradeGlideMovement()
@@ -51,7 +51,7 @@ public class PlayerUpgrades : MonoBehaviour
         {
             currentglideMovementUpgrade++;
             playerStats.puntuantion -= glideMovementUpgradeCost;
-            playerStats.speedGlide += glideMovementUpgrade;
+            playerStats.glideMaxMove += glideMovementUpgrade;
         }
     }
     public void upgradeGlideTimer()
@@ -60,7 +60,7 @@ public class PlayerUpgrades : MonoBehaviour
         {
             currentglideMovementUpgrade++;
             playerStats.puntuantion -= glideTimerUpgradeCost;
-            playerStats.glideTimer += glideTimerUpgrade;
+            playerStats.glideMaxTime += glideTimerUpgrade;
         }
     }
 }
