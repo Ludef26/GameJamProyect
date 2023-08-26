@@ -64,5 +64,6 @@ public class MenuManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         PlayerPrefs.SetInt("newGame", 1);
+        SceneManager.LoadScene("SkyLevel");
     }
 }
