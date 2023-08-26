@@ -4,7 +4,6 @@ public class SavePlayerValues : MonoBehaviour
 {
     [SerializeField] private PlayerMove player;
     [SerializeField] private PlayerUpgrades upgrades;
-    // Start is called before the first frame update
 
     public void SetPlayerStats()
     {
@@ -22,7 +21,7 @@ public class SavePlayerValues : MonoBehaviour
 
     public void loadPlayerStats()
     {
-        if (!PlayerPrefs.HasKey("Puntuation") || player.newGame == true)
+        if (!PlayerPrefs.HasKey("Puntuation") || PlayerPrefs.GetInt("newGame") == 1)
         {
             upgrades.currentCooldownUpgrades = 0;
             upgrades.currentglideMovementUpgrade = 0;
@@ -33,11 +32,11 @@ public class SavePlayerValues : MonoBehaviour
             player.glideMaxMove = 15;
             player.dashCooldown = 2;
             player.MaxLifes = 0;
-            player.newGame = true;
+            player.puntuantion = 0;
+            PlayerPrefs.SetInt("newGame", 0);
         }
         else
         {
-            player.newGame = false;
             upgrades.currentCooldownUpgrades = PlayerPrefs.GetInt("CurrentCooldownUpgrades");
             upgrades.currentglideMovementUpgrade = PlayerPrefs.GetInt("CurrentglideMovementUpgrade");
             upgrades.currentglideTimerUpgrade = PlayerPrefs.GetInt("CurrentTimerUpgrades");

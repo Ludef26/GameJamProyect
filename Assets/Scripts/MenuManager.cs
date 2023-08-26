@@ -10,7 +10,6 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject optionsWindow, controlsWindow, backButtonOptions, backButtonControls, playButton, clickGO;
     public EventSystem eventSystem;
-    private SavePlayerValues savePlayerValues;
 
     private void Awake()
     {
@@ -19,7 +18,6 @@ public class MenuManager : MonoBehaviour
     private void Start()
     {
         eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
-        savePlayerValues = GameObject.Find("Player").GetComponent<SavePlayerValues>();
     }
 
     public void DisplayOptionsWindow()
@@ -65,7 +63,6 @@ public class MenuManager : MonoBehaviour
     public void NewGame()
     {
         PlayerPrefs.DeleteAll();
-
-        savePlayerValues.loadPlayerStats();
+        PlayerPrefs.SetInt("newGame", 1);
     }
 }
