@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6082661, g: 0.9181598, b: 0.9750487, a: 1}
+  m_IndirectSpecularColor: {r: 0.6082669, g: 0.91816115, b: 0.9750506, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9393,6 +9393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerAnimated2
       objectReference: {fileID: 0}
+    - target: {fileID: 4455464264339589986, guid: a876afd90fcd3c34a8a50c273c170779, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f5f3a2b83254ee84d9272b70f598e057, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13262,7 +13266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13385,7 +13389,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -18547,9 +18551,15 @@ MonoBehaviour:
   glideCtrlCostGO: {fileID: 529921791}
   glideCtrlArrowGO: {fileID: 1416967047}
   glideCtrlCostBoxGO: {fileID: 657640081}
+  lifesCurrentValueGO: {fileID: 0}
+  lifesNextValueGO: {fileID: 0}
+  lifesCostGO: {fileID: 0}
+  lifesArrowGO: {fileID: 0}
+  LifesCostBoxGO: {fileID: 0}
   dashCDMaxed: 0
   glideTimeMaxed: 0
   glideCtrlMaxed: 0
+  lifesMaxed: 0
 --- !u!1001 &914349657
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29159,7 +29169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -31638,7 +31648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 7df28d1816e8b0242b4be47f658b2c47, type: 3}
       propertyPath: m_Materials.Array.data[0]

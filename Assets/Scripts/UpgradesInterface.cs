@@ -9,14 +9,16 @@ public class UpgradesInterface : MonoBehaviour
 {
     public GameObject dashCurrentValueGO, dashNextValueGO, dashCostGO, dashArrowGO, dashCostBoxGO, retryButton, 
                       glideCurrentValueGO, glideNextValueGO, glideCostGO, glideArrowGO, glideCostBoxGO,
-                      glideCtrlCurrentValueGO, glideCtrlNextValueGO, glideCtrlCostGO, glideCtrlArrowGO, glideCtrlCostBoxGO;
+                      glideCtrlCurrentValueGO, glideCtrlNextValueGO, glideCtrlCostGO, glideCtrlArrowGO, glideCtrlCostBoxGO,
+                      lifesCurrentValueGO, lifesNextValueGO, lifesCostGO, lifesArrowGO, LifesCostBoxGO;
     private GameObject player;
     private TMP_Text dashCurrentValue, dashNextValue, dashCost,
                      glideCurrentValue, glideNextValue, glideCost,
-                     glideCtrlCurrentValue, glideCtrlNextValue, glideCtrlCost;
+                     glideCtrlCurrentValue, glideCtrlNextValue, glideCtrlCost,
+                     lifesCurrentValue, lifesNextValue, lifesCost;
     private PlayerMove playerMoveScript;
     private PlayerUpgrades playerUpgradesScript;
-    public bool dashCDMaxed, glideTimeMaxed, glideCtrlMaxed;
+    public bool dashCDMaxed, glideTimeMaxed, glideCtrlMaxed, lifesMaxed;
     private EventSystem eventSystem;
 
     private void Start()
@@ -64,6 +66,44 @@ public class UpgradesInterface : MonoBehaviour
             glideArrowGO.SetActive(false);
             glideCostBoxGO.SetActive(false);
         }
+
+        //glidecontrol
+        glideCtrlCurrentValue = glideCtrlCurrentValueGO.GetComponent<TMP_Text>();
+        glideCtrlNextValue = glideCtrlNextValue.GetComponent<TMP_Text>();
+        if (!glideCtrlMaxed)
+        {
+            glideCtrlCurrentValue.text = playerMoveScript.glideMaxMove.ToString();
+            glideCtrlNextValue.text = (playerMoveScript.glideMaxMove + playerUpgradesScript.glideMovementUpgrade).ToString();
+            glideCtrlCost = glideCtrlCostGO.GetComponent<TMP_Text>();
+            glideCtrlCost.text = playerUpgradesScript.glideMovementUpgradeCost.ToString() + "P";
+        }
+        else
+        {
+            glideCtrlCurrentValue.text = playerMoveScript.glideMaxMove.ToString() + "(MAX)";
+            glideCtrlCurrentValue.rectTransform.SetLocalPositionAndRotation(new Vector3(0, -40.36f, 0), glideCtrlCurrentValue.rectTransform.localRotation);
+            glideCtrlNextValueGO.SetActive(false);
+            glideCtrlArrowGO.SetActive(false);
+            glideCtrlCostBoxGO.SetActive(false);
+        }
+
+        //extra lifes
+        lifesCurrentValue = lifesCurrentValueGO.GetComponent<TMP_Text>();
+        lifesNextValue = glideCtrlNextValue.GetComponent<TMP_Text>();
+        if (!lifesMaxed)
+        {
+            lifesCurrentValue.text = playerMoveScript.MaxLifes.ToString();
+            lifesNextValue.text = (playerMoveScript.MaxLifes + playerUpgradesScript.lifeUpgrade).ToString();
+            lifesCost = lifesCostGO.GetComponent<TMP_Text>();
+            lifesCost.text = playerUpgradesScript.lifeUpgradeCost.ToString() + "P";
+        }
+        else
+        {
+            lifesCurrentValue.text = playerMoveScript.MaxLifes.ToString() + "(MAX)";
+            lifesCurrentValue.rectTransform.SetLocalPositionAndRotation(new Vector3(0, -40.36f, 0), glideCtrlCurrentValue.rectTransform.localRotation);
+            lifesNextValueGO.SetActive(false);
+            lifesArrowGO.SetActive(false);
+            LifesCostBoxGO.SetActive(false);
+        }
     }
 
     public void UpdateDashCDCard()
@@ -80,6 +120,7 @@ public class UpgradesInterface : MonoBehaviour
         dashNextValueGO.SetActive(false);
         dashArrowGO.SetActive(false);
         dashCostBoxGO.SetActive(false);
+
     }
 
     public void UpdateGlideSecondsCard()
@@ -96,5 +137,37 @@ public class UpgradesInterface : MonoBehaviour
         glideNextValueGO.SetActive(false);
         glideArrowGO.SetActive(false);
         glideCostBoxGO.SetActive(false);
+    }
+
+    public void UpdateGlideControlCard()
+    {
+        glideCtrlCurrentValue.text = (playerMoveScript.glideMaxMove + playerUpgradesScript.glideMovementUpgrade).ToString();
+        glideCtrlNextValue.text = (playerMoveScript.glideMaxMove + playerUpgradesScript.glideMovementUpgrade + playerUpgradesScript.glideMovementUpgrade).ToString();
+    }
+
+    public void MaxGlideControlCard()
+    {
+        glideCtrlMaxed = true;
+        glideCtrlCurrentValue.text = playerMoveScript.glideMaxMove.ToString() + "(MAX)";
+        glideCtrlCurrentValue.rectTransform.SetLocalPositionAndRotation(new Vector3(0, -40.36f, 0), glideCtrlCurrentValue.rectTransform.localRotation);
+        glideCtrlNextValueGO.SetActive(false);
+        glideCtrlArrowGO.SetActive(false);
+        glideCtrlCostBoxGO.SetActive(false);
+    }
+
+    public void UpdateLifesCard()
+    {
+        lifesCurrentValue.text = (playerMoveScript.MaxLifes + playerUpgradesScript.lifeUpgrade).ToString();
+        lifesNextValue.text = (playerMoveScript.MaxLifes + playerUpgradesScript.lifeUpgrade + playerUpgradesScript.lifeUpgrade).ToString();
+    }
+
+    public void MaxLifesCard()
+    {
+        lifesMaxed = true;
+        lifesCurrentValue.text = playerMoveScript.MaxLifes.ToString() + "(MAX)";
+        lifesCurrentValue.rectTransform.SetLocalPositionAndRotation(new Vector3(0, -40.36f, 0), glideCtrlCurrentValue.rectTransform.localRotation);
+        lifesNextValueGO.SetActive(false);
+        lifesArrowGO.SetActive(false);
+        LifesCostBoxGO.SetActive(false);
     }
 }

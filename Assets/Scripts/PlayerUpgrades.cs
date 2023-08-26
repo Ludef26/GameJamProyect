@@ -65,6 +65,15 @@ public class PlayerUpgrades : MonoBehaviour
             currentglideMovementUpgrade++;
             playerStats.puntuantion -= glideMovementUpgradeCost;
             playerStats.glideMaxMove += glideMovementUpgrade;
+
+            if(currentglideMovementUpgrade != maxglideMovementUpgrade)
+            {
+                upgradesUI.UpdateGlideControlCard();
+            }
+            else
+            {
+                upgradesUI.MaxGlideControlCard();
+            }
         }
     }
     public void upgradeGlideTimer()
