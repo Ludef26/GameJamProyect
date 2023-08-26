@@ -8,7 +8,7 @@ public class ColliderClosingStone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Player")
+        if(other.gameObject.name == "ColliderPlayer")
         {
             objectToOpen.GetComponent<Animator>().enabled = true;
         }
