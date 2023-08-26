@@ -9523,21 +9523,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSpeedMove: 20
   defaultSpeedFall: 70
-  speedGlide: 15
   slowGlide: 40
-  glideTimer: 3
+  glideMaxTime: 0
+  glideMaxMove: 0
   player: {fileID: 554776043}
   canvas: {fileID: 1489938923}
   hudGO: {fileID: 0}
   dashTime: 0.2
+  auxDashTime: 0
   dashCooldown: 2
   normalDashPower: 80
   downDashPower: 140
   puntuantion: 18000
   lifes: 1
+  MaxLifes: 0
   dashFx: {fileID: 8300000, guid: d9a4ecb0e99118542b0ab4c981d0c514, type: 3}
   model: {fileID: 1570249474}
-  currentCooldownUpgrades: 0
+  newGame: 0
 --- !u!4 &554776045
 Transform:
   m_ObjectHideFlags: 0
@@ -9632,7 +9634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 554776044}
-  upgrades: {fileID: 0}
+  upgrades: {fileID: 554776051}
 --- !u!82 &554776050
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9745,6 +9747,18 @@ MonoBehaviour:
   maxDashCooldownUpgrade: 5
   currentCooldownUpgrades: 0
   dashCooldownCost: 1000
+  glideMovementUpgrade: 5
+  maxglideMovementUpgrade: 5
+  currentglideMovementUpgrade: 0
+  glideMovementUpgradeCost: 1000
+  glideTimerUpgrade: 1
+  maxglideTimerUpgrade: 5
+  currentglideTimerUpgrade: 0
+  glideTimerUpgradeCost: 1000
+  lifeUpgrade: 1
+  maxLifesUpgrade: 2
+  currentglideLifesUpgrade: 0
+  lifeUpgradeCost: 1000
 --- !u!1001 &566756342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16499,6 +16513,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1428132165683469913, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1862293532629415354, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -16551,6 +16569,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2002626624638389833, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_text
+      value: 4s
+      objectReference: {fileID: 0}
     - target: {fileID: 3819513175410312668, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_Name
       value: CanvasUpgrades
@@ -16558,6 +16580,10 @@ PrefabInstance:
     - target: {fileID: 3819513175410312668, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165795871787163462, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
+      propertyPath: m_text
+      value: 3s
       objectReference: {fileID: 0}
     - target: {fileID: 7153263585645821079, guid: 9f517a3c669365e45a7ea7cc01ccd49a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -20298,21 +20324,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSpeedMove: 20
   defaultSpeedFall: 70
-  speedGlide: 15
   slowGlide: 40
-  glideTimer: 3
+  glideMaxTime: 0
+  glideMaxMove: 0
   player: {fileID: 1069808962}
   canvas: {fileID: 1489938923}
   hudGO: {fileID: 0}
   dashTime: 0.2
+  auxDashTime: 0
   dashCooldown: 2
   normalDashPower: 80
   downDashPower: 140
   puntuantion: 0
   lifes: 1
+  MaxLifes: 0
   dashFx: {fileID: 0}
   model: {fileID: 0}
-  currentCooldownUpgrades: 0
+  newGame: 0
 --- !u!4 &1069808967
 Transform:
   m_ObjectHideFlags: 0
