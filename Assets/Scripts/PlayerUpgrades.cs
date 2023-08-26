@@ -21,10 +21,14 @@ public class PlayerUpgrades : MonoBehaviour
     public int maxLifesUpgrade = 2, currentglideLifesUpgrade = 0;
     public float lifeUpgradeCost = 1000;
 
+    public GameObject canvasUpgrades;
+    private UpgradesInterface upgradesUI;
+
     // Start is called before the first frame update
     void Start()
     {
         playerStats = GetComponent<PlayerMove>();
+        upgradesUI = canvasUpgrades.GetComponent<UpgradesInterface>();
     }
 
     public void upgradeDashCooldown()
@@ -34,6 +38,15 @@ public class PlayerUpgrades : MonoBehaviour
             currentCooldownUpgrades++;
             playerStats.puntuantion -= dashCooldownCost;
             playerStats.dashCooldown -= dashCooldownReduction;
+
+            if(currentCooldownUpgrades != maxDashCooldownUpgrade)
+            {
+                upgradesUI.UpdateDashCDCard();
+            }
+            else
+            {
+                upgradesUI.MaxDashCDCard();
+            }
         }
     }
     public void AddLife()
