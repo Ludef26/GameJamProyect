@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6080757, g: 0.91811836, b: 0.9750344, a: 1}
+  m_IndirectSpecularColor: {r: 0.6080754, g: 0.91811705, b: 0.97503275, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -845,6 +845,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerAnimated2
       objectReference: {fileID: 0}
+    - target: {fileID: 4455464264339589986, guid: a876afd90fcd3c34a8a50c273c170779, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f5f3a2b83254ee84d9272b70f598e057, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
