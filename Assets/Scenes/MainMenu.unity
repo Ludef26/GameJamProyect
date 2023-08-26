@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6082424, g: 0.91820705, b: 0.9750547, a: 1}
+  m_IndirectSpecularColor: {r: 0.60825825, g: 0.91813016, b: 0.97504157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -476,7 +476,7 @@ AudioSource:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 209b21d6ce352474b9667e2373209d42, type: 2}
   m_audioClip: {fileID: 8300000, guid: 5cb287c1f04d64347beb68c87f8e34f0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.1
@@ -832,7 +832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 151868973634401253, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 177947271440012051, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_Name
@@ -1228,7 +1228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7625365705732305585, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8572234664473244156, guid: 89ff46a811bf0c44384b3ea009a82fa5, type: 3}
       propertyPath: m_Name
