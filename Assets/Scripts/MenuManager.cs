@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject optionsWindow, controlsWindow, backButtonOptions, backButtonControls, playButton, clickGO;
     public EventSystem eventSystem;
+    private SavePlayerValues savePlayerValues;
 
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class MenuManager : MonoBehaviour
     private void Start()
     {
         eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
+        savePlayerValues = GameObject.Find("Player").GetComponent<SavePlayerValues>();
     }
 
     public void DisplayOptionsWindow()
@@ -58,5 +60,12 @@ public class MenuManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         clickGO.GetComponent<AudioSource>().enabled = true;
+    }
+
+    public void NewGame()
+    {
+        PlayerPrefs.DeleteAll();
+
+        savePlayerValues.loadPlayerStats();
     }
 }

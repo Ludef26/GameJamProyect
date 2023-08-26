@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     private Scene currentScene;
     private SavePlayerValues playerStats;
+    public bool newGame;
 
     private void Start()
     {
