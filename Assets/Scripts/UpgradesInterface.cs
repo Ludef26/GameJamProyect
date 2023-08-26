@@ -88,7 +88,7 @@ public class UpgradesInterface : MonoBehaviour
 
         //extra lifes
         lifesCurrentValue = lifesCurrentValueGO.GetComponent<TMP_Text>();
-        lifesNextValue = glideCtrlNextValue.GetComponent<TMP_Text>();
+        lifesNextValue = lifesNextValue.GetComponent<TMP_Text>();
         if (playerUpgradesScript.currentglideLifesUpgrade < playerUpgradesScript.maxLifesUpgrade)
         {
             lifesCurrentValue.text = playerMoveScript.MaxLifes.ToString();
