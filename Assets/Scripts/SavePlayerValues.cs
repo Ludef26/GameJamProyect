@@ -22,7 +22,7 @@ public class SavePlayerValues : MonoBehaviour
 
     public void loadPlayerStats()
     {
-        if (!PlayerPrefs.HasKey("Puntuation"))
+        if (!PlayerPrefs.HasKey("Puntuation") || player.newGame == true)
         {
             upgrades.currentCooldownUpgrades = 0;
             upgrades.currentglideMovementUpgrade = 0;
