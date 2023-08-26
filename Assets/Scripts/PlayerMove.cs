@@ -29,7 +29,7 @@ public class PlayerMove : MonoBehaviour
     public AudioClip dashFx;
     public GameObject model;
     private Animator modelAnimator;
-    public bool newGame;
+    public bool newGame = false;
     private void Awake()
     {
         PlayerStats = GetComponent<SavePlayerValues>();

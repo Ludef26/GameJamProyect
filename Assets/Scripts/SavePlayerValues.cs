@@ -22,25 +22,27 @@ public class SavePlayerValues : MonoBehaviour
 
     public void loadPlayerStats()
     {
-        player.puntuantion = PlayerPrefs.GetFloat("Puntuation");
-        player.dashCooldown = PlayerPrefs.GetFloat("DashCooldown");
-        player.glideMaxMove = PlayerPrefs.GetFloat("GlideMaxMove");
-        player.glideMaxTime = PlayerPrefs.GetFloat("GlideMaxTimer");
-        player.MaxLifes = PlayerPrefs.GetInt("MaxLifes");
-
-        if (player.newGame)
+        if (!PlayerPrefs.HasKey("Puntuation"))
         {
             upgrades.currentCooldownUpgrades = 0;
             upgrades.currentglideMovementUpgrade = 0;
             upgrades.currentglideTimerUpgrade = 0;
             upgrades.currentglideLifesUpgrade = 0;
+            player.newGame = true;
         }
         else
         {
+            player.newGame = false;
             upgrades.currentCooldownUpgrades = PlayerPrefs.GetInt("CurrentCooldownUpgrades");
             upgrades.currentglideMovementUpgrade = PlayerPrefs.GetInt("CurrentglideMovementUpgrade");
             upgrades.currentglideTimerUpgrade = PlayerPrefs.GetInt("CurrentTimerUpgrades");
             upgrades.currentglideLifesUpgrade = PlayerPrefs.GetInt("CurrentLifesUpgrade");
+
+            player.puntuantion = PlayerPrefs.GetFloat("Puntuation");
+            player.dashCooldown = PlayerPrefs.GetFloat("DashCooldown");
+            player.glideMaxMove = PlayerPrefs.GetFloat("GlideMaxMove");
+            player.glideMaxTime = PlayerPrefs.GetFloat("GlideMaxTimer");
+            player.MaxLifes = PlayerPrefs.GetInt("MaxLifes");
         }
     }
 
