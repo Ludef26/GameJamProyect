@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class CollisionDetection : MonoBehaviour
 {
     private GameManager gameManager;
     private int lifes;
-    public GameObject canvasUpgrades, hud;
+    public GameObject canvasUpgrades, hud, canvasHearts, lifesText;
 
     private void Start()
     {
@@ -26,6 +28,9 @@ public class CollisionDetection : MonoBehaviour
             else
             {
                 collision.gameObject.SetActive(false);
+                lifesText.GetComponent<TMP_Text>().text = (GetComponent<PlayerMove>().lifes + 1).ToString();
+                canvasHearts.SetActive(true);
+                StartCoroutine(DeactivateCanvasHearts());
             }
         }
         if(collision.gameObject.tag == "Molino")
@@ -36,6 +41,17 @@ public class CollisionDetection : MonoBehaviour
             {
                 gameManager.RestartLevel();
             }
+            else
+            {
+                lifesText.GetComponent<TMP_Text>().text = (GetComponent<PlayerMove>().lifes + 1).ToString();
+                canvasHearts.SetActive(true);
+            }
         }
+    }
+
+    private IEnumerator DeactivateCanvasHearts()
+    {
+        yield return new WaitForSeconds(1f);
+        canvasHearts.SetActive(false);
     }
 }
