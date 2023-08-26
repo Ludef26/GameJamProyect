@@ -28,10 +28,20 @@ public class SavePlayerValues : MonoBehaviour
         player.glideMaxTime = PlayerPrefs.GetFloat("GlideMaxTimer");
         player.MaxLifes = PlayerPrefs.GetInt("MaxLifes");
 
-        upgrades.currentCooldownUpgrades = PlayerPrefs.GetInt("CurrentCooldownUpgrades");
-        upgrades.currentglideMovementUpgrade = PlayerPrefs.GetInt("CurrentglideMovementUpgrade");
-        upgrades.currentglideTimerUpgrade = PlayerPrefs.GetInt("CurrentTimerUpgrades");
-        upgrades.currentglideLifesUpgrade = PlayerPrefs.GetInt("CurrentLifesUpgrade");
+        if (player.newGame)
+        {
+            upgrades.currentCooldownUpgrades = 0;
+            upgrades.currentglideMovementUpgrade = 0;
+            upgrades.currentglideTimerUpgrade = 0;
+            upgrades.currentglideLifesUpgrade = 0;
+        }
+        else
+        {
+            upgrades.currentCooldownUpgrades = PlayerPrefs.GetInt("CurrentCooldownUpgrades");
+            upgrades.currentglideMovementUpgrade = PlayerPrefs.GetInt("CurrentglideMovementUpgrade");
+            upgrades.currentglideTimerUpgrade = PlayerPrefs.GetInt("CurrentTimerUpgrades");
+            upgrades.currentglideLifesUpgrade = PlayerPrefs.GetInt("CurrentLifesUpgrade");
+        }
     }
 
     
