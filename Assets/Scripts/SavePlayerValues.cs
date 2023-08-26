@@ -30,8 +30,8 @@ public class SavePlayerValues : MonoBehaviour
 
         upgrades.currentCooldownUpgrades = PlayerPrefs.GetInt("CurrentCooldownUpgrades");
         upgrades.currentglideMovementUpgrade = PlayerPrefs.GetInt("CurrentglideMovementUpgrade");
-        upgrades.currentCooldownUpgrades = PlayerPrefs.GetInt("currentglideTimerUpgrade");
-        upgrades.currentglideMovementUpgrade = PlayerPrefs.GetInt("currentglideLifesUpgrade");
+        upgrades.currentglideTimerUpgrade = PlayerPrefs.GetInt("CurrentTimerUpgrades");
+        upgrades.currentglideLifesUpgrade = PlayerPrefs.GetInt("CurrentLifesUpgrade");
     }
 
     
