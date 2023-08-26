@@ -9,16 +9,20 @@ public class CollisionDetection : MonoBehaviour
     private GameManager gameManager;
     private int lifes;
     public GameObject canvasUpgrades, hud, canvasHearts, lifesText;
+    private AudioSource audioSource;
+    public AudioClip impactFX;
 
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Obstacle")
         {
             GetComponent<PlayerMove>().lifes--;
+            audioSource.PlayOneShot(impactFX);
             if (GetComponent<PlayerMove>().lifes < 0)
             {
                 Time.timeScale = 0;
@@ -35,6 +39,7 @@ public class CollisionDetection : MonoBehaviour
         }
         if(collision.gameObject.tag == "Molino")
         {
+            audioSource.PlayOneShot(impactFX);
             GetComponent<PlayerMove>().lifes--;
             collision.collider.enabled = false;
             if (GetComponent<PlayerMove>().lifes < 0)

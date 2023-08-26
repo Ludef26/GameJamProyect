@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.6080754, g: 0.91811705, b: 0.97503275, a: 1}
+  m_IndirectSpecularColor: {r: 0.6081605, g: 0.9181198, b: 0.975061, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22006,6 +22006,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasUpgrades: {fileID: 0}
   hud: {fileID: 0}
+  canvasHearts: {fileID: 0}
+  lifesText: {fileID: 0}
+  impactFX: {fileID: 0}
 --- !u!136 &1069808964
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -41993,6 +41996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5337997169502590127, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 6286803827978013117, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
       propertyPath: canvasUpgrades
       value: 
@@ -42001,6 +42008,10 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 1851814400}
+    - target: {fileID: 7748397939967660312, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
+      propertyPath: impactFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d4109080e0f8ec419799afe4a54fdef, type: 3}
     - target: {fileID: 7748397939967660312, guid: 5e7ec1bbbda8cf54db106222515799ec, type: 3}
       propertyPath: canvasUpgrades
       value: 
