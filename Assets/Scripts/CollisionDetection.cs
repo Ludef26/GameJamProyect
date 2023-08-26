@@ -11,15 +11,13 @@ public class CollisionDetection : MonoBehaviour
     private void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-        lifes = GetComponent<PlayerMove>().lifes;
     }
     private void OnCollisionEnter(Collision collision)
     {
-
         if(collision.gameObject.tag == "Obstacle")
         {
-            lifes--;
-            if (lifes < 0)
+            GetComponent<PlayerMove>().lifes--;
+            if (GetComponent<PlayerMove>().lifes < 0)
             {
                 Time.timeScale = 0;
                 canvasUpgrades.SetActive(true);
@@ -32,9 +30,9 @@ public class CollisionDetection : MonoBehaviour
         }
         if(collision.gameObject.tag == "Molino")
         {
-            lifes--;
+            GetComponent<PlayerMove>().lifes--;
             collision.collider.enabled = false;
-            if (lifes < 0)
+            if (GetComponent<PlayerMove>().lifes < 0)
             {
                 gameManager.RestartLevel();
             }
