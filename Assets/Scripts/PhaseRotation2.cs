@@ -5,8 +5,9 @@ using UnityEngine;
 public class PhaseRotation2 : MonoBehaviour
 {
     private GameObject player;
-    public float targetXRotation = -52.19f;
+    public float targetXRotation = 0f;
     public float rotationMultiplier;
+    private bool isRotating = false;
 
     private void Start()
     {
@@ -17,17 +18,20 @@ public class PhaseRotation2 : MonoBehaviour
     {
         if(other.gameObject.name == "ColliderPlayer")
         {
-            StartCoroutine(GradualPlayerRotation());
+            isRotating = true;
         } 
     }
-
-    private IEnumerator GradualPlayerRotation()
+    private void FixedUpdate()
     {
-        while(player.transform.eulerAngles.x > 360 + targetXRotation || player.transform.eulerAngles.x == 0)
+        if (isRotating)
         {
-            Debug.Log(player.transform.eulerAngles.x);
-            player.transform.Rotate(-rotationMultiplier * Time.deltaTime, 0, 0);
-            yield return new WaitForSeconds(0.002f);
+            Debug.Log("entra a isRotating");
+            player.transform.Rotate(rotationMultiplier * Time.deltaTime, 0, 0);
+            if (player.transform.eulerAngles.x > 359)
+            {
+                Debug.Log("entra a 2do if");
+                isRotating = false;
+            }
         }
     }
 }

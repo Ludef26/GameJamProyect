@@ -35,14 +35,4 @@ public class PhaseRotation : MonoBehaviour
             }
         }
     }
-
-    private IEnumerator GradualPlayerRotation()
-    {
-        while(player.transform.eulerAngles.x >= 1.0f)
-        {
-            Debug.Log(actualRotation);
-            player.transform.Rotate(rotationMultiplier * Time.deltaTime, 0, 0);
-            yield return new WaitForSeconds(0.002f);
-        }
-    }
 }
