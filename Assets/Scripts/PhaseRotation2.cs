@@ -28,6 +28,7 @@ public class PhaseRotation2 : MonoBehaviour
             Debug.Log("entra a isRotating");
             player.transform.Rotate(rotationMultiplier * Time.fixedDeltaTime, 0, 0);
             Debug.Log(rotationMultiplier * Time.deltaTime);
+            Debug.Log(player.transform.eulerAngles.x);
             if (player.transform.eulerAngles.x >= 359)
             {
                 Debug.Log("entra a 2do if");
